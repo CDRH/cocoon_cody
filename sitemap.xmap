@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+    <map:components>
+        <map:generators default="file">
+            <map:generator name="search" src="org.apache.cocoon.generation.SearchGenerator" />
+        </map:generators>
+        <map:transformers default="xslt"/>
+        <map:serializers default="xhtmlutf8">
+            <map:serializer logger="sitemap.serializer.xhtml" mime-type="text/html" name="xhtmlutf8" pool-grow="2" pool-max="64" pool-min="2" src="org.apache.cocoon.serialization.XMLSerializer">
+                <doctype-public>-//W3C//DTD XHTML 1.0 Transitional//EN</doctype-public>
+                <doctype-system>http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</doctype-system>
+                <encoding>US-ASCII</encoding>
+                <omit-xml-declaration>yes</omit-xml-declaration>
+                <indent>yes</indent>
+            </map:serializer>
+            <map:serializer logger="sitemap.serializer.text" mime-type="text/plain" name="textutf8" src="org.apache.cocoon.serialization.TextSerializer">
+                <encoding>UTF-8</encoding>
+            </map:serializer>
+        </map:serializers>
+        <map:selectors default="browser" />
+        
+        <map:matchers default="wildcard"/>
+
+        <map:actions>
+            <map:action name="request-param-validation" src="edu.unl.cdrh.cocoon.acting.RequestParamValidationAction" />
+            <map:action name="image-param-validation" src="edu.unl.cdrh.cocoon.acting.cody.ImageParamValidationAction" />
+        </map:actions>
+        
+    </map:components>
+    
+    <map:pipelines>
+        
+        <!--<map:component-configurations>
+            <global-variables>
+                <solr-url>http://solrserver.com:8080/solr/cody/select/?version=2.2&amp;indent=on</solr-url>
+                <highlight-params>hl=on&amp;hl.fl=text&amp;hl.usePhraseHighlighter=true&amp;hl.highlighMultiTerm=true&amp;hl.snippets=4</highlight-params>
+                <facet-params>facet=true&amp;facet.sort=lex&amp;facet.method=enum&amp;facet.mincount=1</facet-params>
+            </global-variables>
+        </map:component-configurations>
+        -->
+        <map:pipeline>
+            
+            <!-- Static Pages -->
+            
+            <!-- HOME -->
+            
+            <map:match pattern="^(index.html)?$" type="regexp">
+                <map:generate src="xml/wfc.000.home.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="home"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Personography -->
+            <map:match pattern="life/wfc.person.html">
+                <map:generate src="xml/wfc.person.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="life"/>
+                    <map:parameter name="subCategory" value="Personography"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Encyclopedia -->
+            
+            <map:match pattern="life/wfc.encyc.html">
+                <map:generate src="xml/wfc.encyc.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="life"/>
+                    <map:parameter name="subCategory" value="Encyclopedia"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Popup pages (testing) -->
+            <map:match pattern="popup/*/**/index.html">
+                <map:generate src="xml/wfc.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="popup"/>
+                    <map:parameter name="subCategory" value="{1}/{2}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- XML File display as HTML -->
+            <map:match pattern="*/wfc.*.html">
+                <map:generate src="xml/wfc.{2}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="{1}"/>
+                    <map:parameter name="pageid" value="{2}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+           
+            
+            <!-- XML File display as XML -->
+            <map:match pattern="*/wfc.*.xml">
+                <map:read src="xml/wfc.{2}.xml"/>
+            </map:match>
+            
+            <!-- ??? -->
+            <map:match pattern="search/">
+                <map:redirect-to uri="index.html" />
+            </map:match>
+
+            <!-- Search results -->
+            
+            <map:match pattern="search/result.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="searchresults" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>  
+            
+            <!-- Category results (separated out to enable date sort)
+            Changed to pull search results from XSL uncoded SOLR url -KD -->
+            <map:match pattern="category/result.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="category" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Category results (new)-->
+            
+            <!-- On hold because I am unsure as of yet what to do with 
+            sub categories with spaces in them. May have to handle on the
+            input side.-->
+            
+            <!--<map:match pattern="*/**/">
+                <map:generate src="xml/wfc.000.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="category"/>
+                    <map:parameter name="subCategory" value="{1}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <map:match pattern="*/**/index.html">
+                <map:generate src="xml/wfc.000.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="category"/>
+                    <map:parameter name="subCategory" value="{2}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>-->
+            
+            <!-- People search results (for personography) -->
+            <map:match pattern="search/people.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="searchresults" />
+                    <map:parameter name="searchtype" value="people" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+
+            <!-- Places search results -->
+            <map:match pattern="search/places.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="searchresults" />
+                    <map:parameter name="searchtype" value="places" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Encyclopedia search results -->
+            <!-- Same as the others for now, including in case we want to generalize later -->
+            <map:match pattern="search/encyc.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="searchresults" />
+                    <map:parameter name="searchtype" value="encyc" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+
+            <!-- Advanced search results -->
+            <map:match pattern="search/advanced.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="searchresults" />
+                    <map:parameter name="searchtype" value="advanced" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- The solrURL in pate_templates.xsl template will need to be altered to handle advanced operators -->
+            
+            <!--<map:match pattern="search/advanced.html">
+                <map:act type="request">
+                    <map:parameter name="parameters" value="true" />
+                    <map:parameter name="default.start" value="0" />
+                    <map:parameter name="default.rows" value="10" />
+                    <map:act type="request-param-validation">
+                        <map:generate
+                            src="{global:solr-url}&amp;q=({url-encode:{request-param:q}}{people}{places}{author}{year}{category}{subCategory})&amp;{start}&amp;{rows}&amp;{global:highlight-params}" />
+                    </map:act>
+                    <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                        <map:parameter name="pagetype" value="searchresults" />
+                        <map:parameter name="searchtype" value="advanced" />
+                        <map:parameter name="use-request-parameters" value="false"/>
+                    </map:transform>
+                </map:act>
+                <map:serialize type="html"/>
+                <!-\-map:serialize type="xml"/-\->
+            </map:match>-->
+
+            <!-- View Images -->
+            <map:match pattern="images/view/*/*">
+                <map:generate src="xml/wfc.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                  <map:parameter name="use-request-parameters" value="true" />
+                  <map:parameter name="pagetype" value="imagesView"/>
+                  <map:parameter name="imageno" value="{2}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- View memorabilia as images (e.g. postcards) -->
+            <map:match pattern="memorabilia/view/*/*">
+                <map:generate src="xml/wfc.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="use-request-parameters" value="true" />
+                    <map:parameter name="pagetype" value="imagesView"/>
+                    <map:parameter name="imageno" value="{2}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+
+            <!-- Image Search results -->
+            <map:match pattern="images/*/index.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="subCategory" value="{1}"/>
+                    <map:parameter name="pagetype" value="imagesGallery" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                    <map:parameter name="start" value="0" />
+                    <map:parameter name="rows" value="12" />
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Memorabilia as Image Search results (e.g. postcards) -->
+            <map:match pattern="memorabilia/*/index.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="subCategory" value="{1}"/>
+                    <map:parameter name="pagetype" value="imagesGallery" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                    <map:parameter name="start" value="0" />
+                    <map:parameter name="rows" value="12" />
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            
+          <!--  
+            <map:match pattern="images/*/index.html">
+                <map:act type="request">
+                    <map:parameter name="parameters" value="true" />
+                    <map:parameter name="default.start" value="0" />
+                    <map:parameter name="default.rows" value="12" />
+                    <map:parameter name="default.subCategory" value="{1}" />
+                    
+                    <map:generate
+                        src="{global:solr-url}&amp;q=*:*&amp;fq=category:Images&amp;fq=subCategory:&quot;{subCategory}&quot;&amp;start={start}&amp;rows={rows}&amp;sort=dateSort+asc,titleMain+asc"/>
+                    <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                        <map:parameter name="subCategory" value="{subCategory}"/>
+                        <map:parameter name="pagetype" value="imagesGallery" />
+                        <map:parameter name="use-request-parameters" value="false"/>
+                    </map:transform>
+                </map:act>
+                <map:serialize type="html"/>
+            </map:match>-->
+            
+            
+            <!-- Static pages:
+                About, support, search
+                Texts, Images, Multimedia, Ephemera, Life, 
+                Scholarship, Community, Reference tools-->
+
+            <map:match pattern="*/">
+                <map:generate src="xml/wfc.000.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="{1}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <map:match pattern="*/index.html">
+                <map:generate src="xml/wfc.000.{1}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="{1}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!-- Rends -->
+            
+            <map:match pattern="admin/rends/index.html">
+                <map:generate src="xml/wfc.000.rends.xml" />
+                <map:transform src="stylesheets/xslt/rends.xsl">
+                    <map:parameter name="pagetype" value="rends"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            <!--<map:match pattern="admin/rends/**">
+                    <map:generate
+                        src="{global:solr-url}&amp;q=(*:*)&amp;rows=10000&amp;fl=id,{1}&amp;facet.field={1}&amp;facet=true&amp;facet.sort=lex&amp;facet.method=enum&amp;facet.missing=on&amp;facet.limit=1000" />
+                    <map:transform src="stylesheets/xslt/rends.xsl" />
+                    <map:serialize type="xhtmlutf8" />
+                    <!-\-<map:serialize type="xml" />-\->
+            </map:match>-->
+           
+            <!-- End Rends -->
+
+            <map:match pattern="stylesheets/css/**">
+                <map:read src="stylesheets/css/{1}"/>
+            </map:match>
+            
+            <map:match pattern="search/result.html">
+                <map:generate src="xml/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="searchresults" />
+                    <map:parameter name="use-request-parameters" value="true"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+
+            <!-- Converted this one to calling the solr search results from inside the stylesheet -KD -->
+            <map:match pattern="js/solr/*.json">
+                <map:generate src="xml/wfc.person.xml" />
+                <map:transform src="stylesheets/xslt/solr2json-facets.xsl" >
+                <map:parameter name="category" value="{1}"/>
+                </map:transform>
+                <map:serialize type="textutf8" />
+            </map:match>
+            
+            <!-- Not sure where the following two are used, commenting out for now. -KD -->
+            <!--<map:match pattern="js/solr/category/*.json">
+                <map:generate src="xml/wfc.person.xml" />
+                <map:transform src="stylesheets/xslt/solr2json-facets.xsl" >
+                    <map:parameter name="category" value="{1}"/>
+                </map:transform>
+                <map:serialize type="text" />
+            </map:match>
+
+            <map:match pattern="js/solr/category/*.json">
+                <map:generate src="{global:solr-url}&amp;indent=on&amp;q=(*:*)&amp;fq=category:{1}&amp;rows=2000&amp;fl=id" />
+                <map:transform src="stylesheets/xslt/solr2json.xsl">
+                    <map:parameter name="category" value="{1}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>-->
+
+            <map:match pattern="css/**">
+                <map:read src="css/{1}"/>
+            </map:match>
+            
+            <map:match pattern="fonts/**">
+                <map:read src="fonts/{1}"/>
+            </map:match>
+            
+            <map:match pattern="images/**">
+                <map:read src="images/{1}"/>
+            </map:match>
+            
+            <map:match pattern="figures/**">
+                <map:read src="figures/{1}"/>
+            </map:match>
+            
+            <map:match pattern="audio/**">
+                <map:read src="audio/{1}"/>
+            </map:match>
+            
+            <map:match pattern="js/**">
+                <map:read src="js/{1}"/>
+            </map:match>
+            
+            <map:match pattern="plugins/**">
+                <map:read src="plugins/{1}"/>
+            </map:match>
+            
+            <map:match pattern="*/favicon.ico">
+                <map:read src="favicon.ico"/>
+            </map:match>
+            
+            <map:match pattern="*/*/favicon.ico">
+                <map:read src="favicon.ico"/>
+            </map:match>
+            
+            <map:match pattern="*/*/*/favicon.ico">
+                <map:read src="favicon.ico"/>
+            </map:match>
+            
+            <map:match pattern="*/apple-touch-icon.png">
+                <map:read src="apple-touch-icon.png"/>
+            </map:match>
+            
+            <map:match pattern="*/*/apple-touch-icon.png">
+                <map:read src="apple-touch-icon.png"/>
+            </map:match>
+            
+            <map:match pattern="*/*/*/apple-touch-icon.png">
+                <map:read src="apple-touch-icon.png"/>
+            </map:match>
+            
+          <!--  <map:match pattern="^(index.html)?$" type="regexp">
+                <map:generate src="xml/wfc.000.home.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="home"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>-->
+            
+            <map:match pattern="*">
+                <map:read src="{1}"/>
+            </map:match>
+            
+            <map:match pattern="*favicon.ico">
+                <map:read src="favicon.ico"/>
+            </map:match>
+            
+           <!-- <map:handle-errors type="404">
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="error"/>
+                </map:transform>
+                <map:serialize  type="html" status-code="404"/>
+                </map:handle-errors>
+                
+            <map:handle-errors type="500">
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="error"/>
+                </map:transform>
+                <map:serialize  type="html" status-code="404"/>
+                </map:handle-errors>-->
+            
+            <!-- XML File display as HTML (temporary for non wfc files) -->
+            <map:match pattern="*/*.html">
+                <map:generate src="xml/{2}.xml" />
+                <map:transform src="stylesheets/xslt/tei.p5.xsl">
+                    <map:parameter name="pagetype" value="{1}"/>
+                    <map:parameter name="pageid" value="{2}"/>
+                </map:transform>
+                <map:serialize type="xhtmlutf8" />
+            </map:match>
+            
+            
+        </map:pipeline>
+    </map:pipelines>
+</map:sitemap>

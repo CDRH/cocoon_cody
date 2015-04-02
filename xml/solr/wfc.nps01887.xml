@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps01887</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Indians killed in collision</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">April 8, 1904</field>
+      <field name="dateSearch">1904-04-08</field>
+      <field name="year">1904</field>
+      <field name="author"/>
+      <field name="topic">Show Indians</field>
+      <field name="keywords"/>
+      <field name="keywords"/>
+      <field name="people">Iron Tail, Chief</field>
+      <field name="people">Kill Head</field>
+      <field name="people">Iron Tail, Phillip, Jr.</field>
+      <field name="people">Come Last, Thomas</field>
+      <field name="people">Good Face, Annie</field>
+      <field name="people">Standing Bear, Luther</field>
+      <field name="people">Whitehorse, Chief</field>
+      <field name="places">Maywood, Ill.</field>
+      <field name="places"/>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+
+
+
+INDIANS KILLED IN COLLISION.
+Three Dead, Three Fatally Injured, and a Score Hurt.
+
+A special car containing sixty-three Indians belonging to Buffalo Bill's Wild West Show was smashed in a collision between the Oregon Express and a fast mail train on the Chicago and Northwestern Railway near Maywood, Ill., to-day during a fog.  Both trains were east-bound.
+
+Three of the Indians were instantly killed, three were fatally injured, and twenty others more or less seriously hurt.  The Indians who were not pinned in the wreck fled in a panic across the prairie, but returned and, led by Chief Iron Tail, solemnly chanted the Indian "death song" as they gathered around the bodies which had been laid out beside the tracks.  Those killed were Kill Head, Phillip Iron Tail, Jr., and Thomas Come Last.
+
+Chief Whitehorse, in charge of the Indians on the train, was among those fatally injured.  He said he knew death was near and requested that he be placed near his dead companions.  The Chief was propped up and sat stoically smoking a pipe while physicians worked over his injuries pending arrangements to take the injured were Annie Good Face and Luther Standing Bear.
+
+No white passengers were hurt.
+
+The Indians were on their way to New York.
+
+
+
+
+</field>
+   </doc>
+</add>

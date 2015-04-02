@@ -1,0 +1,5 @@
+*.svn
+figures/*
+audio/*
+config.xsl
+post.py

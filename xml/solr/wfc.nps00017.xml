@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps00017</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">A Buffalo Bill Indian Dead</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">June 29, 1900</field>
+      <field name="dateSearch">1900-06-29</field>
+      <field name="year">1900</field>
+      <field name="author"/>
+      <field name="topic">Show Indians</field>
+      <field name="keywords">Sioux</field>
+      <field name="keywords"/>
+      <field name="people">Man-Afraid-of-Hawk</field>
+      <field name="people">Eagle Bear</field>
+      <field name="people"/>
+      <field name="places">Danbury Hospital</field>
+      <field name="places"/>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+
+
+
+A Buffalo Bill Indian Dead.
+   
+Man-Afraid-of-Hawk, aged twenty-one, a full-blooded Sioux Indian connected with the Buffalo Bill Wild West Show, died at the Danbury Hospital to-night after a brief illness from inflammation of the stomach. Eagle Bear, another member of the show, is also in a critical condition. A number of other attaches were ill upon their arrival here this morning, but with the exception of the two Indians none of the cases is of a serious nature.  It is believed the men were made sick through eating canned corn.
+
+
+
+
+</field>
+   </doc>
+</add>

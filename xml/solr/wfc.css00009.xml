@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.css00009</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Letter from William F. Cody to John R. Brennan, June 18, 1909</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Correspondence</field>
+      <field name="date">June 18, 1909</field>
+      <field name="dateSearch">1909-06-18</field>
+      <field name="year">1909</field>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="topic">Show Indians</field>
+      <field name="keywords">Wages</field>
+      <field name="keywords">Brulé Indians</field>
+      <field name="keywords">Oglala Indians</field>
+      <field name="people">Brennan, John R.</field>
+      <field name="people">Iron Tail, Chief</field>
+      <field name="places">Glen Falls (N.Y.)</field>
+      <field name="imageID">wfc.css00009_img_0</field>
+      <field name="text"> 
+
+
+
+
+
+
+
+
+
+[Letterhead imprint: Buffalo Bill's Wild West Combined with Pawnee Bill's Great Far East.]
+
+Glen Falls N. Y.
+June 18th [19]09
+
+Dear Col Brennan,
+
+
+
+Pardon me for forgetting to send the $1.00 for the telegram.
+
+We are getting along nicely. These Brules haven't the snap and get up that the Ogalallas have but they do fairly well. And they work for about  half the wages. We paid the Ogalallas which amounts to a big lot of money on the seasons.
+
+Please remember me to Iron Tail or any of my red brothers.
+
+
+With my very kindest regards to your self,
+I am
+yours truly,
+W. F. Cody
+
+
+
+
+
+
+</field>
+   </doc>
+</add>

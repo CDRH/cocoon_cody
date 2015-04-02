@@ -1,0 +1,1493 @@
+/* Primary Styles
+	    Author: Karin Dalziel
+*/
+
+@font-face {
+	font-family: 'OFLSortsMillGoudyRegular';
+	src: url('../../fonts/OFLGoudyStM-webfont.eot');
+	src: local('☺'), url('../../fonts/OFLGoudyStM-webfont.woff') format('woff'), url('../../fonts/OFLGoudyStM-webfont.ttf') format('truetype'), url('../../fonts/OFLGoudyStM-webfont.svg#webfontu7PrKgbe') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* SHARED */
+
+html {
+	position: relative;
+	font: 1em Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+	font-size: 13px;
+}
+
+#main {
+	font: 16px Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+	padding: 10px 0;
+	font: 1em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.6;
+}
+
+.para, .figure, .figureDesc {
+	display:block;
+	padding: 10px 0;
+	line-height: 1.6;
+	font: 1em Georgia, "Times New Roman", Times, serif;
+}
+
+table {
+	font: 1em Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+td {
+	padding: 5px;
+}
+
+blockquote, .blockquote {
+	display: block;
+	margin-left: 2em;
+	padding: 10px 0;
+}
+
+.figure {
+	padding: 10px 0 0 0;
+	/*border: #000 solid 1px;
+	background-color: yellow;*/
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+	font-size: 1.8em;
+	padding: 10px 0 0px 0;
+}
+
+h3 {
+	font-size: 1.6em;
+	padding: 10px 0 0px 0;
+}
+
+h4 {
+	font-size: 1.4em;
+	padding: 10px 0 0px 0;
+}
+
+h5 {
+	font-size: 1.2em;
+	padding: 10px 0 0px 0;
+	font-weight: 100;
+}
+
+h6 {
+	font-size: 1.1em;
+	padding: 10px 0 0px 0;
+}
+
+dl {
+	padding: 0 16px;
+	padding: 10px 0;
+	font: 1.1em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+}
+
+dt {
+	padding: 10px 0 0 0;
+	font-weight: 900;
+}
+
+dd {
+	margin-left: 16px;
+}
+
+.right {
+	float: right;
+	clear: both;
+}
+
+.right img, .left img {
+	border: 1px solid #d5d5c2;
+}
+
+.right img {
+	margin: 0 0 5px 10px;
+}
+
+.left img {
+	margin: 0 10px 5px 0px;
+}
+
+/* SECOND */
+
+html {
+	background: #e4e5d1 url(../../images/ibackbg.gif) repeat-x;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background: #f7f8e2 url(../../images/ifrontbg.gif) repeat-x;
+	position: relative;
+}
+
+#header {
+	height: 184px;
+	position: relative;
+}
+
+#header h1 {
+	text-align: left;
+	font: 2.2em "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	padding-top: 40px;
+	text-shadow: 2px 2px 4px #000;
+	width: 680px;
+}
+
+#header h1 span {
+	font-size: 1.2em;
+	display: block;
+}
+
+#header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header h1 a:hover {
+	color: #fff;
+}
+
+#logo {
+	background: url(../../images/smallpicshad.jpg) no-repeat;
+	text-indent: -999px;
+	width: 173px;
+	height: 207px;
+	position: absolute;
+	right: -9px;
+	top: 0px;
+}
+
+/* chicklets */
+
+.nav_first {
+	position: absolute;
+	top: -150px;
+	left: 0px;
+	z-index: 2;
+	padding-left: 10px;
+}
+
+.nav_first li a {
+	padding: 2px 15px 5px 20px;
+	float: left;
+	color: #fff;
+	text-decoration: none;
+	height: 18px;
+	font: normal 100 1.2em "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+	background-color: #57696d;
+	border-top: 3px solid #57696d;
+}
+
+.nav_first li a:hover {
+	border-top: 3px solid #262121;
+}
+
+.nav_about a {
+	border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+}
+
+.nav_support a {
+	border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	margin-left: 20px;
+}
+
+.nav_first li {
+	display: inline; /* For IE7, leave here*/
+}
+
+/* nav */
+
+#nav {
+	position: absolute;
+	top: 151px;
+	width: 680px;
+}
+
+#nav ul {
+	list-style: none;
+	margin: 0 0 0 -20px;
+	padding: 0;
+}
+
+#nav .nav_second {
+	display: inline-block; /* For IE7, leave here*/
+}
+
+#nav .nav_second li {
+	display: inline; /* For IE7, leave here*/
+}
+
+#nav .nav_second li a {
+	padding: 5px 5px 5px 20px;
+	width: 150px;
+	float: left;
+	color: #f7f8e2;
+	text-decoration: none;
+	height: 18px;
+	text-shadow: 2px 2px 4px #000;
+	font: 200 1.2em "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+	display: inline; /* For IE7, leave here*/
+}
+
+#nav ul li a strong {
+	font-weight: 100;
+	font-family: "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+}
+
+#nav ul.nav_second li a:hover {
+	background-color: #262121;
+}
+
+#nav ul.nav_second li.nocontent a {
+	color: #999;
+}
+
+#nav ul.nav_second li.nocontent a:hover {
+	color: #999;
+	background-color: transparent;
+}
+
+#nav ul li span {
+	display: none;
+}
+
+#main {
+	position: relative;
+	margin-top: 50px;
+}
+
+/* FOOTER */
+
+#footer {
+	margin-top: 10px;
+	padding: 40px 0 380px 0;
+	clear: both;
+}
+
+.logos {
+	margin: -12px -20px 20px -20px;
+	padding: 10px 0 10px 0;
+	border-top: 5px double #e4e5d1;
+	border-bottom: 5px double #e4e5d1;
+	height: 70px;
+}
+
+.bbhc_logo {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.bbhc_logo img {
+	width: 120px;
+	margin: 0 0 0 20px;
+	/*max-width: 100%;*/
+	float: left;
+}
+
+.unl_logo {
+	float: right;
+	width: 190px;
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+.unl_logo img {
+	margin: 0 0 0 0;
+	width: 190px;
+}
+
+.copyright {
+	clear: both;
+	font-size: 1em;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.support_footer {
+	margin: -20px -20px 20px -20px;
+	padding: 10px 0 10px 0;
+	border-bottom: 5px double #e4e5d1;
+	clear: both;
+	display: none;
+}
+
+.support_footer p {
+	margin: 0 20px;
+	font-size: 1em;
+}
+
+span.photo_credit {
+	width: 230px;
+	float: right;
+	padding: 0 10px 10px 10px;
+	font-size: 1.1em;
+	border-left: 4px solid #e4e5d1;
+}
+
+#footer .footer_inner ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .footer_inner ul li {
+	display: inline;
+}
+
+#footer .footer_inner ul li a {
+	display: block;
+	float: left;
+	padding: 0px 10px 10px 0px;
+	text-decoration: none;
+	display: inline;
+}
+
+.nav_second2 {
+	clear: left;
+}
+
+/* SPLASH PAGE */
+
+html.home {
+	background: #e4e5d1 url(../../images/backbg.gif) repeat-x;
+}
+
+.home #container {
+	margin: auto;
+	padding: 0 20px;
+	background: #f7f8e2 url(../../images/frontbg.gif) repeat-x;
+	position: relative;
+	z-index: 1;
+}
+
+.home #header h1 {
+	text-align: center;
+	font: 2.5em "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+	padding-top: 30px;
+	height: 124px;
+	width: 100%
+}
+
+.home #header h1 span {
+	font-size: 1.2em;
+	display: block;
+}
+
+.home #logo {
+	background: url(../../images/frontpicshad.jpg) no-repeat;
+	width: 399px;
+	height: 462px;
+	position: absolute;
+	right: -25px;
+	top: 162px;
+	z-index: 1;
+}
+
+.home #nav {
+	position: absolute;
+	top: 170px;
+	width: 590px;
+}
+
+.home #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline; /* For IE7, leave here*/
+}
+
+.home .nav_first {
+	position: absolute;
+	padding-left: 0px;
+	z-index: 4;
+	top: 350px;
+}
+
+.home #nav ul li {
+	display: inline;
+/
+
+* For IE7, leave here*/
+}
+
+.home #nav ul.nav_second li a, .home #nav ul.nav_first li.nav_about a, .home #nav ul.nav_first li.nav_search a {
+	margin: 5px;
+	padding: 10px;
+	width: 260px;
+	float: left;
+	height: 58px;
+	background-color: #494141;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 2px 2px 4px #000;
+	font: 1em "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+	display: inline; /* For IE7, leave here*/
+	border: none;
+}
+
+.home #nav ul.nav_second li a:hover, .home #nav ul.nav_first li.nav_about a:hover, .home #nav ul.nav_first li.nav_search a:hover {
+	background-color: #262121;
+}
+
+.home #nav ul.nav_second li.nocontent a, .home #nav ul.nav_first li.nocontent a, .home #nav ul.nav_first li.nocontent a {
+	color: #999;
+}
+
+.home #nav ul.nav_second li.nocontent a:hover {
+	color: #999;
+	background-color: #494141;
+}
+
+.home #nav ul li a strong {
+	font-weight: 100;
+	font-size: 1.4em;
+}
+
+.home .nav_about a {
+	border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+}
+
+.home .nav_support a {
+	position: absolute;
+	border-top: 3px solid #57696d;
+	top: -519px;
+	left: 750px;
+	width: 155px;
+	font: normal 100 .9em "OFLSortsMillGoudyRegular", Georgia, "Times New Roman", Times, serif;
+}
+
+.home #nav ul li span {
+	display: block;
+	font-size: .9em;
+	font-weight: 100;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.home #main {
+	position: relative;
+	margin-top: 500px;
+}
+
+/* Home footer */
+
+.home #footer {
+	margin-top: 20px;
+	padding: 40px 0 10px 0;
+}
+
+.home .support_footer {
+	display: block;
+}
+
+.home #footer {
+	margin-top: 10px;
+}
+
+.home .logos {
+	height: 120px;
+}
+
+.home .bbhc_logo {
+	width: 540px;
+}
+
+.home .bbhc_logo img {
+	width: 200px;
+	margin: 0px 0px 0 40px;
+	max-width: 100%;
+}
+
+.home .unl_logo {
+	float: right;
+	width: 340px;
+}
+
+.home .unl_logo img {
+	margin: 00px 0px 0 45px;
+	width: 292px;
+}
+
+/* SUPPORT PAGE */
+
+.partners p a {
+	font-size: 1.4em;
+	color: #000000;
+	text-decoration: none;
+}
+
+.onecolumn, .twocolumn, .threecolumn {
+	overflow: auto;
+	clear: both;
+}
+
+.onecolumn, .twocolumn, .threecolumn, .first, .second, .third {
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+/* one */
+
+.onecolumn {
+	text-align: center;
+}
+
+.onecolumn h3 {
+	font-size: 1.4em;
+}
+
+.onecolumn .fixfloat {
+	margin-left: 232px;
+}
+
+.onecolumn ul {
+	text-align: center;
+}
+
+.onecolumn li {
+	width: 180px;
+	display: inline-block;
+	height: 2.7em;
+	float: left;
+	border: 1px solid #D5CAB5;
+	margin: 10px;
+	padding: 10px;
+	background-color: #fff;
+}
+
+/* three */
+
+.threecolumn img {
+	max-width: 100%;
+}
+
+.threecolumn div {
+	width: 286px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	height: 440px;
+}
+
+.threecolumn .first {
+	margin-left: 0;
+	text-align: center;
+}
+
+.threecolumn .second {
+	text-align: center;
+}
+
+.threecolumn .third {
+	margin-right: 0;
+	text-align: center;
+}
+
+.threecolumn .third p {
+	padding-bottom: 30px;
+}
+
+/* ABOUT PAGE */
+
+.sponsorship {
+	width: 300px;
+	float: right;
+	padding-top: 50px;
+}
+
+.editors {
+	width: 620px;
+	float: left;
+	padding-bottom: 50px;
+}
+
+/* Texts */
+
+a.subCategory {
+	text-decoration: none;
+	color: #434343;
+}
+
+.subCategory {
+	width: 458px;
+	float: left;
+	margin: 10px;
+	border: solid 1px #e4e5d1;
+	font-size: .9em;
+	height: 120px;
+	line-height: 1;
+}
+
+.subCategory p {
+	line-height: 1.4;
+}
+
+.topics .subCategory {
+
+height: 140px;
+}
+
+.subCategory:hover {
+	background: #e4e5d1;
+}
+
+.subCategory h3, .subCategory p {
+	padding: 10px;
+}
+
+.subCategory p {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 85px;
+}
+
+.subCategory h3 {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.subCategory .image {
+	float: left;
+	padding: 10px;
+}
+
+.translation {
+	margin-bottom: 30px;
+}
+
+/* metadata  */
+
+.bibliography {
+	margin: 20px 0 20px 0;
+	padding: 5px 20px 0px 20px;
+	background-color: #e4e5d1;
+	border-right: 1px solid #d5d6c3;
+	border-left: 1px solid #d5d6c3;
+	border-top: 1px solid #d5d6c3;
+	overflow: auto;
+	clear: both;
+}
+
+.bibliography p {
+	padding: 0 0 5px 0;
+	line-height: 1.6;
+}
+
+.subjectLink a {
+	background-color: #f7f8e2;
+	padding: 2px;
+	margin: 2px;
+}
+
+
+.morelink {
+	
+}
+
+.morelink a {
+	color: #262121;
+	text-decoration: none;
+	width: 100%;
+	background-color: #d5d6c3;
+	display: block;
+	margin:  0 0 0 -20px;
+	padding: 5px 20px 5px 20px;
+	border-bottom: #d5d6c3 solid 3px;
+}
+
+.morelink a:hover {
+	border-bottom: #4c4444 solid 3px;
+
+}
+
+.ref {
+	text-decoration: none;
+}
+
+/* Search */
+
+div#basic, div#advanced, div#people, div#places {
+	overflow: auto;
+}
+
+#basic form {
+	width: 400px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+input {
+	border: 2px solid #aaa;
+}
+
+input.textField {
+	font-size: 1.5em;
+	background-color: #fff;
+	padding: 2px;
+}
+
+.basicSearch1, .basicSearch2 {
+	width: 445px;
+}
+
+.basicSearch1 {
+	float: left;
+
+}
+
+/* Added for jetson launch*/
+
+.basicSearch1 {
+	padding: 10px 20px;
+	font-size: .9em;
+}
+
+.basicSearch2 {
+	float: right;
+}
+
+#keyword {
+	width: 436px;
+}
+
+.peopleSearch, .placesSearch {
+	width: 390px;
+}
+
+label {
+	font-size: 1.1em;
+}
+
+fieldset {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	margin: 5px 0;
+	padding: 5px 0;
+	background-color: #f3f3e8;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.checklist_category.checklist {
+	margin: 0;
+	padding: 0;
+}
+
+.category_expanded, .category_collapsed {
+	width: 196px;
+	background-color: white;
+	border: 1px solid #aaa;
+	float: left;
+	list-style-type: none;
+	margin: 10px;
+	padding: 5px;
+}
+
+.category_expanded ul {
+	margin-left: 10px;
+}
+
+fieldset.keyword {
+	padding: 5px 10px 0 10px;
+}
+
+fieldset.keyword label, fieldset.limitBy label {
+	vertical-align: middle;
+	display: block;
+	font-size: 1.2em;
+	font-weight: 900;
+	padding: 5px 0;
+}
+
+fieldset.limitBy {
+	height: 5em;
+}
+
+fieldset.limitBy {
+	width: 437px;
+	float: left;
+	padding: 10px;
+}
+
+h4 {
+	clear: both;
+}
+
+.advancedSearch1 #keyword {
+	width: 885px;
+}
+
+input.submit {
+	background: #e4e5d1;
+	font-size: 1.2em;
+}
+
+input.submit:hover {
+	background: #999;
+}
+
+input.submit:active {
+	background: #42585e;
+	color: #fff;
+}
+
+.filters input {
+	width: 20px;
+	height: 17px;
+	font-weight: 900;
+}
+
+.filters label {
+	width: 20px;
+	height: 17px;
+	font-weight: 700;
+}
+
+
+
+input.subCategory.Texts {
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+
+/* Search Results */
+
+.searchResult {
+	border-bottom: 1px solid #aaa;
+	clear: both;
+	overflow: auto;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.searchResult .image {
+	width: 75px;
+	height: 75px;
+	float: left;
+	border: 1px solid #797979;
+	margin: 0 0 0 10px;
+	text-align: center;
+	background: #aaa;
+
+	}
+	
+.searchResult .image img {
+
+	}
+
+.meta {
+	width: 140px;
+	float: left;
+	display: block;
+	margin-left: 20px !important;
+	border-right: 1px dotted #aaa;
+	text-align: right;
+	padding-right: 10px !important;
+}
+
+.meta span {
+	display: block;
+}
+
+.searchResult h3, .searchResult p {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.searchResult h3 {
+	padding: 0px 0 5px 0;
+	margin: 0 0 0 0;
+}
+
+.searchResult .result {
+	line-height: 1.2;
+}
+
+.resultsSummary {
+	float: left;
+	font-size: 1.2em;
+}
+
+.searchSort {
+	width: 45%;
+	float: left;
+}
+
+.pagination {
+	text-align: right;
+	width: 45%;
+	float: right;
+	
+}
+
+.pagination, .searchSort {
+	font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	padding:  10px 0;
+}
+
+.paginationline {
+	clear: both;
+	border-bottom: #aaa solid 2px;
+	padding: 0;
+	margin: 20px 0;
+	height: 2px;
+}
+
+.paginationJump {
+	width: 4em;
+	height: 1.4em;
+	font-size: 1em;
+	margin-bottom: 2px;
+	border: 1px solid #aaa;
+}
+
+.pagination input.submit {
+	height: 1.4em;
+	font-size: 1em;
+	margin-bottom: 2px;
+	border: 1px solid #aaa;
+}
+
+.searchResult p.result, .searchResult h3 {
+	margin-left: 300px;
+	padding-left: 10px;
+}
+
+form.jumpForm {
+	display: inline;
+}
+
+/* Personography */
+
+
+ul.life_item {
+	margin:0;
+	overflow: auto;
+	display: block;
+	
+}
+
+ul.life_item li a {
+	display:block;
+	float: left;
+	background-color: #e4e4d1;
+	padding: 5px;
+	margin: 5px 10px 5px 0;
+	
+}
+
+div.life_item {
+	margin: 20px 0 20px 0;
+	padding: 15px 20px 0px 20px;
+	border: 2px solid #d5d6c3;
+	overflow: auto;
+	clear: both;
+	
+}
+
+.life_item h3 {
+	clear:both;	
+
+}
+
+.personDetails {
+	margin: 0;
+	padding: 0;
+}
+
+.personImage {
+	float: right;
+	/*width: 250px;
+	height: 250px;*/
+	background-color: #aaa;
+	margin: 0 0 10px 10px;
+}
+
+.personImage img {
+	border: solid 1px #aaa;
+}
+
+
+
+
+/* Multimedia */
+
+audio {
+	background-color: #4c4444;
+	margin: 20px 0 10px 0;
+	clear: none;
+}
+
+/* Life */
+
+table#timeline-life tr {
+	border-bottom: 1px solid #e4e5d1;
+	font-size: 0.9em;
+}
+
+table#timeline-life td.year {
+	padding-right: 14px;
+	font-weight: bold;
+	font-family: Georgia;
+	font-size: 14px;
+}
+
+table#timeline-life th.col-title {
+	text-transform: uppercase;
+}
+
+table#timeline-life th, table#timeline-life td {
+	padding: 4px 40px 4px 0;
+}
+
+/* Images Search results */
+
+div.imageResult {
+	width: 260px;
+	margin: 10px 10px 10px 10px;
+	float: left;
+	height: 360px;
+	text-align: center;
+	background-color: #e4e5d1;
+	padding: 20px;
+}
+
+.imagesGallery h3 {
+	font-size: 1.4em;
+}
+
+/* Images Individual pages */
+
+.imagesView h2 {
+	padding-bottom: 20px;
+}
+
+
+/* Book Styles */
+
+.titlePage, .docTitle, .titlePart, .byline, .docAuthor, .docImprint, .publisher, .pubPlace {
+	display: block;
+	font: 1em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.6;
+}
+
+li {
+	font: 1em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.6;
+}
+
+/* 
+	 * print styles
+	 * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+	 */
+	 
+	 
+	 
+	 
+span.pageimage {
+	border-bottom: 3px solid #d5d6c3;
+	border-right: 3px solid #d5d6c3;
+	border-left: 3px solid #d5d6c3;
+	margin: 0;
+	padding: 0;
+	float: right;
+	clear: both;
+	margin: 0 0 10px 10px;
+}
+
+.hr {
+	border-top: 3px solid #d5d6c3; 
+	clear: right;
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding: 0px 0 0 0;
+	display: block;
+	height: 0px;
+}
+
+	 
+	 
+html.error {
+	
+}	
+
+div.error {
+	width: 80%;
+	margin: auto;
+	max-width: 600px;
+	background-color: #c3c3b3;
+	padding: 20px 40px 80px 40px;
+	height: ;
+	border-style: solid;
+	border-color: #242020;
+	font-family: Georgia, "Times New Roman", Times, serif;
+} 
+
+.error h1 {
+	font-size: 3em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.error p {
+	font-size: 1.5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+/* Popup */
+
+html.popup {
+	background: #e4e5d1;
+	
+}
+
+
+
+
+
+
+
+
+
+
+	 
+	 
+	 
+
+@media print {
+
+* {
+	background: transparent !important;
+	color: #444 !important;
+	text-shadow: none;
+}
+
+a, a:visited {
+	color: #444 !important;
+	text-decoration: underline;
+}
+
+a:after {
+	content: " (" attr(href) ")";
+}
+
+abbr:after {
+	content: " (" attr(title) ")";
+}
+
+.ir a:after {
+	content: "";
+}
+
+/* Don't show links for images */
+
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+
+
+
+img {
+	page-break-inside: avoid;
+}
+	
+
+@page { margin: 0.5cm; }
+
+p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+}
+
+h2, h3 {
+	page-break-after: avoid;
+}
+
+}
+
+
+
+
+
+
+/* * Media queries for responsive design */
+
+@media all and (orientation:portrait) {
+
+/* Style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+
+/* Style adjustments for landscape mode goes here */
+
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+	   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+	   
+
+/* Not sure if I need this  - Karin */
+
+        /*@media screen and (max-device-width: 680px) {
+        
+        #container {
+        	width: 400px;
+        }*/
+        
+        /* Prevent iOS, WinMobile from adjusting font size */
+        
+        /*html {
+        	-webkit-text-size-adjust: none;
+        	-ms-text-size-adjust: none;
+        }*/
+        
+        /*}*/
+
+/* End not sure if I need */
+
+@media (max-width: 980px) {
+
+#container {
+	width: 90%;
+}
+
+#header h1 {
+	font-size: 2em;
+	width: 100%;
+}
+
+.sponsorship, .editors {
+	float: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.home #nav {
+	width: 430px;
+}
+
+.home #nav ul.nav_second li a, .home #nav ul.nav_first li.nav_about a, .home #nav ul.nav_first li.nav_search a {
+	width: 180px;
+}
+
+.home .nav_support a {
+	left: 600px;
+}
+
+}
+
+
+
+
+@media (max-width: 860px) {
+
+#logo {
+	display: none;
+}
+
+#header h1 {
+	font-size: 1.6em;
+}
+
+#nav {
+	width: 100%;
+}
+
+#nav .nav_second {
+	width: 100%;
+	margin-left: 0px;
+
+}
+
+.home #nav .nav_first {
+	width: 100% !important;
+}
+
+.home #nav .nav_first li a {
+	width: 42% !important;
+}
+
+#nav .nav_second li a {
+	padding: 5px 0px 5px 0px;
+	width: 25%;
+}
+
+.home #nav {
+	width: 100%;
+}
+
+.home #nav ul.nav_second li a, .home #nav ul.nav_first li.nav_about a, .home #nav ul.nav_first li.nav_search a {
+	width: 42%;
+}
+
+.home .nav_support a {
+	left: 300px;
+	font-size: .8em;
+}
+
+.home #header h1 {
+	font-size: 2em;
+}
+	
+	}
+	
+	
+	
+	
+
+@media (max-width: 500px) {
+
+#nav .nav_second li a  {
+	padding: 5px 0px 5px 0px;
+	width: 25%;
+	font-size: 1em;
+}
+
+#nav .nav_first {
+	font-size: .7em;
+}
+
+.home #nav .nav_second li a, .home #nav .nav_first li a  {
+
+	width: 40% !important;
+}
+
+.home #nav .nav_first li a  {
+
+	width: 41% !important;
+	position: relative;
+}
+
+.home #nav .nav_first li.nav_support a  {
+	margin-top: -90px;
+}
+
+.home #header h1 {
+	font-size: 1.6em;
+}
+
+.home .nav_support a {
+	left: 200px;
+	font-size: .8em;
+}
+
+.subCategory {
+	width: 100%;
+}
+
+.searchResult h3, .searchResult p.result {
+	clear: both;
+	margin: 0;
+	padding: 5px 0 5px 0;
+}
+
+.meta {
+	border: none;
+}
+
+div.logos {
+	height: 400px;	
+}
+
+.unl_logo {
+	clear: both;
+	float: left;
+}
+
+}
+
+
+
+
+@media (max-width: 400px) {
+
+.nav_first {
+	font-size: .9em;
+}
+
+#nav .nav_second li a {
+	font-size: .9em;
+}
+
+#header h1 {
+	font-size: 1.4em;
+}
+
+.home #header h1 {
+	font-size: 1.4em;
+}
+
+.home .nav_support a {
+	left: 10px;
+	font-size: .7em;
+}
+
+#nav .nav_second li a  {
+	padding: 5px 0px 5px 0px;
+	width: 25%;
+	font-size: 1em;
+}
+
+.home #nav .nav_second li a, .home #nav .nav_first li a  {
+	width: 35% !important;
+}
+
+.home #nav .nav_second li a span, .home #nav .nav_first li a span  {
+	display: none;
+}
+
+.home #nav .nav_first li a  {
+	width: 35% !important;
+	position: relative;
+}
+
+.home #nav .nav_first li.nav_support a  {
+	margin-top: -173;
+}
+
+#header h1 {
+	font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+}

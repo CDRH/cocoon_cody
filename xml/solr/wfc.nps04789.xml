@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps04789</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Buffalo Bill Will Protest</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">December 26, 1899</field>
+      <field name="dateSearch">1899-12-26</field>
+      <field name="year">1899</field>
+      <field name="author"/>
+      <field name="topic">Show Indians</field>
+      <field name="keywords"/>
+      <field name="keywords"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="places">Omaha</field>
+      <field name="places">Washington</field>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+
+
+
+Buffalo Bill Will Protest
+
+"Buffalo Bill," Colonel W. F. Cody, passed through Omaha during the day en route to Washington to urge the Indian commissioner to rescind his recent order prohibiting Indians from leaving the reservations to travel with shows. He claims that the redskins are benefitted rather than injured as members of traveling organizations.
+
+
+
+
+</field>
+   </doc>
+</add>

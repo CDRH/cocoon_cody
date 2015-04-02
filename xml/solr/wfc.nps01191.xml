@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps01191</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">The "Wild West" Combination</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">July 5, 1884</field>
+      <field name="dateSearch">1884-07-05</field>
+      <field name="year">1884</field>
+      <field name="author"/>
+      <field name="topic">Show Indians</field>
+      <field name="keywords">Wild West Combination</field>
+      <field name="people">Bogardus, Captain</field>
+      <field name="people"/>
+      <field name="places"/>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+
+
+
+The "Wild West" Combination
+
+Buffalo Bill and his combination delighted thousands at the Athletic Park yesterday afternoon and evening. The programme is one continuation of interesting novelties. The shooting by Capt. Bogardus and his sons, the numerous thrilling acts of Buffalo Bill, the Indian pony races, the attack on the stage-coach and the settler's cabin were all loudly applauded. The latter is especially relished, and is a fixed climax to the exhibition.
+
+
+
+
+</field>
+   </doc>
+</add>

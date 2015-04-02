@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps00032</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Buffalo Bill's Indians return</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">November 29, 1905</field>
+      <field name="dateSearch">1905-11-29</field>
+      <field name="year">1905</field>
+      <field name="author"/>
+      <field name="topic">Show Indians</field>
+      <field name="keywords"/>
+      <field name="keywords"/>
+      <field name="people">McCune, William F.</field>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="places">Genoa</field>
+      <field name="places">Naples</field>
+      <field name="places">Pine Ridge Agency</field>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+
+
+
+BUFFALO BILL'S INDIANS RETURN
+
+Among the passengers who arrived to-day on board the steamer Fuerst Bismark from Genoa and Naples were forty-eight Indians from Buffalo Bill's show. They were in charge of William F. McCune, who will take them to the Pine Ridge Agency in South Dakota. There were several other members of the show among the second cabin passengers.
+
+
+
+
+</field>
+   </doc>
+</add>

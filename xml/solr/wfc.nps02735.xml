@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps02735</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">The Wild West show</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">August 21, 1888</field>
+      <field name="dateSearch">1888-08-21</field>
+      <field name="year">1888</field>
+      <field name="author"/>
+      <field name="topic">Show Indians</field>
+      <field name="keywords">Sioux</field>
+      <field name="people">Blue Horse</field>
+      <field name="people">Kidd, Jim</field>
+      <field name="people">Forsyth, Sandy</field>
+      <field name="places">Carlisle</field>
+      <field name="places">Pine Ridge Agency</field>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+
+
+
+THE WILD WEST SHOW.
+Notes of Interest About the Exhibition and Buffalo Bill's Visitors.
+
+The attendance yesterday excelled the opening day.
+
+An excursion from Reading and intermediate stations is due to-morrow.
+
+A gentleman took a fractious horse to the show yesterday to be broken and ridden. After a hard struggle the animal was conquered by Jim Kidd, and turned over to the owner well broken and gentle.
+
+General Sandy Forsyth, formerly on General Sheridan's staff, was at the Wild West yesterday visiting his old scout and army friend, Colonel Cody. He was well pleased with the entertainment, and expressed delight at the enthusiastic manner in which the vivid scenes of the soul-stirring days of the frontier were witnessed by the patrons.
+
+One hundred and seventy five Indian scholars from Carlisle enjoyed yesterday's exhibition. Many of their fathers and relatives from the Pine Ridge Agency are now with Buffalo Bill. One of the curiosities of Indian history came to light when Blue Horse, one of the Indian chiefs with the Wild West, met his son, who has been a number of years at Carlisle. The son could not speak Sioux, and Blue horse could not speak English, so the aid of an interpreter was called in to enable them to converse.
+
+
+
+
+</field>
+   </doc>
+</add>

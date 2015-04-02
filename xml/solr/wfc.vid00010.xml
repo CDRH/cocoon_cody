@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.vid00010</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Buffalo Bill</field>
+      <field name="category">Multimedia</field>
+      <field name="subCategory">Video</field>
+      <field name="date"/>
+      <field name="dateSearch"/>
+      <field name="year"/>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="keywords">Iowa</field>
+      <field name="keywords">Kansas</field>
+      <field name="keywords">Nebraska</field>
+      <field name="keywords">Pony Express</field>
+      <field name="imageID">icon-video</field>
+      <field name="text"> 
+        
+            
+
+                Buffalo Bill
+   
+
+            
+
+        
+    </field>
+   </doc>
+</add>

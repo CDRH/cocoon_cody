@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.css00005</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Letter from William F. Cody to Bill Russell, August 5, 1904</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Correspondence</field>
+      <field name="date">August 5, 1904</field>
+      <field name="dateSearch">1904-08-05</field>
+      <field name="year">1904</field>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="topic">Show Indians</field>
+      <field name="keywords"/>
+      <field name="people">Russell, Bill</field>
+      <field name="places">Glasgow (Scotland)</field>
+      <field name="places">Paris (France)</field>
+      <field name="imageID">wfc.css00005_img_0</field>
+      <field name="text"> 
+
+
+
+
+
+
+
+Buffalo Bill's
+Wild West
+
+Glasgow
+Aug 5th/04
+
+My Dear Bill,
+
+
+I will let you know about bringing Indians soon as I can hear from my agents in Paris—in two or three weeks. We are after a great Building there.
+
+My business is simply great. We will get pretty near to $70.000 here this week.
+
+
+Your friend
+Bill Cody
+
+
+
+
+</field>
+   </doc>
+</add>

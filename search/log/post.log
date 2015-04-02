@@ -1,0 +1,1252 @@
+file ../xml/solr/wfc.aud00001.xml doesn't exist or ../xml/wfc.aud00001.xml is newer...
+converting wfc.aud00001.xml...
+
+Posting file wfc.aud00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">90</int></lst>
+</response>
+
+file ../xml/solr/wfc.aud00002.xml doesn't exist or ../xml/wfc.aud00002.xml is newer...
+converting wfc.aud00002.xml...
+
+Posting file wfc.aud00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">6</int></lst>
+</response>
+
+file ../xml/solr/wfc.bio.00001.xml doesn't exist or ../xml/wfc.bio.00001.xml is newer...
+converting wfc.bio.00001.xml...
+
+Posting file wfc.bio.00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">12</int></lst>
+</response>
+
+file ../xml/solr/wfc.bio.00002.xml doesn't exist or ../xml/wfc.bio.00002.xml is newer...
+converting wfc.bio.00002.xml...
+
+Posting file wfc.bio.00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">25</int></lst>
+</response>
+
+file ../xml/solr/wfc.bks00002.xml doesn't exist or ../xml/wfc.bks00002.xml is newer...
+converting wfc.bks00002.xml...
+
+Posting file wfc.bks00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">64</int></lst>
+</response>
+
+file ../xml/solr/wfc.bks00003.xml doesn't exist or ../xml/wfc.bks00003.xml is newer...
+converting wfc.bks00003.xml...
+
+Posting file wfc.bks00003.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">25</int></lst>
+</response>
+
+file ../xml/solr/wfc.bks00004.xml doesn't exist or ../xml/wfc.bks00004.xml is newer...
+converting wfc.bks00004.xml...
+
+Posting file wfc.bks00004.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">74</int></lst>
+</response>
+
+file ../xml/solr/wfc.chronology.xml doesn't exist or ../xml/wfc.chronology.xml is newer...
+converting wfc.chronology.xml...
+
+Posting file wfc.chronology.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00004.xml doesn't exist or ../xml/wfc.css00004.xml is newer...
+converting wfc.css00004.xml...
+
+Posting file wfc.css00004.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00005.xml doesn't exist or ../xml/wfc.css00005.xml is newer...
+converting wfc.css00005.xml...
+
+Posting file wfc.css00005.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00006.xml doesn't exist or ../xml/wfc.css00006.xml is newer...
+converting wfc.css00006.xml...
+
+Posting file wfc.css00006.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00007.xml doesn't exist or ../xml/wfc.css00007.xml is newer...
+converting wfc.css00007.xml...
+
+Posting file wfc.css00007.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00008.xml doesn't exist or ../xml/wfc.css00008.xml is newer...
+converting wfc.css00008.xml...
+
+Posting file wfc.css00008.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00009.xml doesn't exist or ../xml/wfc.css00009.xml is newer...
+converting wfc.css00009.xml...
+
+Posting file wfc.css00009.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00010.xml doesn't exist or ../xml/wfc.css00010.xml is newer...
+converting wfc.css00010.xml...
+
+Posting file wfc.css00010.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00011.xml doesn't exist or ../xml/wfc.css00011.xml is newer...
+converting wfc.css00011.xml...
+
+Posting file wfc.css00011.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00012.xml doesn't exist or ../xml/wfc.css00012.xml is newer...
+converting wfc.css00012.xml...
+
+Posting file wfc.css00012.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00014.xml doesn't exist or ../xml/wfc.css00014.xml is newer...
+converting wfc.css00014.xml...
+
+Posting file wfc.css00014.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00015.xml doesn't exist or ../xml/wfc.css00015.xml is newer...
+converting wfc.css00015.xml...
+
+Posting file wfc.css00015.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.css00016.xml doesn't exist or ../xml/wfc.css00016.xml is newer...
+converting wfc.css00016.xml...
+
+Posting file wfc.css00016.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.his.00001.xml doesn't exist or ../xml/wfc.his.00001.xml is newer...
+converting wfc.his.00001.xml...
+
+Posting file wfc.his.00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.illustrations.xml doesn't exist or ../xml/wfc.illustrations.xml is newer...
+converting wfc.illustrations.xml...
+
+Posting file wfc.illustrations.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">10</int></lst>
+</response>
+
+file ../xml/solr/wfc.lgl00002.xml doesn't exist or ../xml/wfc.lgl00002.xml is newer...
+converting wfc.lgl00002.xml...
+
+Posting file wfc.lgl00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.lgl00010.xml doesn't exist or ../xml/wfc.lgl00010.xml is newer...
+converting wfc.lgl00010.xml...
+
+Posting file wfc.lgl00010.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00001.xml doesn't exist or ../xml/wfc.nps00001.xml is newer...
+converting wfc.nps00001.xml...
+
+Posting file wfc.nps00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">9</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00002.xml doesn't exist or ../xml/wfc.nps00002.xml is newer...
+converting wfc.nps00002.xml...
+
+Posting file wfc.nps00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00003.xml doesn't exist or ../xml/wfc.nps00003.xml is newer...
+converting wfc.nps00003.xml...
+
+Posting file wfc.nps00003.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00004.xml doesn't exist or ../xml/wfc.nps00004.xml is newer...
+converting wfc.nps00004.xml...
+
+Posting file wfc.nps00004.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00005.xml doesn't exist or ../xml/wfc.nps00005.xml is newer...
+converting wfc.nps00005.xml...
+
+Posting file wfc.nps00005.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00006.xml doesn't exist or ../xml/wfc.nps00006.xml is newer...
+converting wfc.nps00006.xml...
+
+Posting file wfc.nps00006.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00007.xml doesn't exist or ../xml/wfc.nps00007.xml is newer...
+converting wfc.nps00007.xml...
+
+Posting file wfc.nps00007.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00008.xml doesn't exist or ../xml/wfc.nps00008.xml is newer...
+converting wfc.nps00008.xml...
+
+Posting file wfc.nps00008.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00009.xml doesn't exist or ../xml/wfc.nps00009.xml is newer...
+converting wfc.nps00009.xml...
+
+Posting file wfc.nps00009.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">9</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00010.xml doesn't exist or ../xml/wfc.nps00010.xml is newer...
+converting wfc.nps00010.xml...
+
+Posting file wfc.nps00010.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00011.xml doesn't exist or ../xml/wfc.nps00011.xml is newer...
+converting wfc.nps00011.xml...
+
+Posting file wfc.nps00011.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00012.xml doesn't exist or ../xml/wfc.nps00012.xml is newer...
+converting wfc.nps00012.xml...
+
+Posting file wfc.nps00012.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00013.xml doesn't exist or ../xml/wfc.nps00013.xml is newer...
+converting wfc.nps00013.xml...
+
+Posting file wfc.nps00013.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00014.xml doesn't exist or ../xml/wfc.nps00014.xml is newer...
+converting wfc.nps00014.xml...
+
+Posting file wfc.nps00014.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00015.xml doesn't exist or ../xml/wfc.nps00015.xml is newer...
+converting wfc.nps00015.xml...
+
+Posting file wfc.nps00015.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00016.xml doesn't exist or ../xml/wfc.nps00016.xml is newer...
+converting wfc.nps00016.xml...
+
+Posting file wfc.nps00016.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00017.xml doesn't exist or ../xml/wfc.nps00017.xml is newer...
+converting wfc.nps00017.xml...
+
+Posting file wfc.nps00017.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00018.xml doesn't exist or ../xml/wfc.nps00018.xml is newer...
+converting wfc.nps00018.xml...
+
+Posting file wfc.nps00018.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00019.xml doesn't exist or ../xml/wfc.nps00019.xml is newer...
+converting wfc.nps00019.xml...
+
+Posting file wfc.nps00019.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00020.xml doesn't exist or ../xml/wfc.nps00020.xml is newer...
+converting wfc.nps00020.xml...
+
+Posting file wfc.nps00020.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00021.xml doesn't exist or ../xml/wfc.nps00021.xml is newer...
+converting wfc.nps00021.xml...
+
+Posting file wfc.nps00021.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00022.xml doesn't exist or ../xml/wfc.nps00022.xml is newer...
+converting wfc.nps00022.xml...
+
+Posting file wfc.nps00022.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00023.xml doesn't exist or ../xml/wfc.nps00023.xml is newer...
+converting wfc.nps00023.xml...
+
+Posting file wfc.nps00023.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00024.xml doesn't exist or ../xml/wfc.nps00024.xml is newer...
+converting wfc.nps00024.xml...
+
+Posting file wfc.nps00024.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00025.xml doesn't exist or ../xml/wfc.nps00025.xml is newer...
+converting wfc.nps00025.xml...
+
+Posting file wfc.nps00025.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00026.xml doesn't exist or ../xml/wfc.nps00026.xml is newer...
+converting wfc.nps00026.xml...
+
+Posting file wfc.nps00026.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00027.xml doesn't exist or ../xml/wfc.nps00027.xml is newer...
+converting wfc.nps00027.xml...
+
+Posting file wfc.nps00027.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00028.xml doesn't exist or ../xml/wfc.nps00028.xml is newer...
+converting wfc.nps00028.xml...
+
+Posting file wfc.nps00028.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00029.xml doesn't exist or ../xml/wfc.nps00029.xml is newer...
+converting wfc.nps00029.xml...
+
+Posting file wfc.nps00029.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00030.xml doesn't exist or ../xml/wfc.nps00030.xml is newer...
+converting wfc.nps00030.xml...
+
+Posting file wfc.nps00030.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00031.xml doesn't exist or ../xml/wfc.nps00031.xml is newer...
+converting wfc.nps00031.xml...
+
+Posting file wfc.nps00031.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00032.xml doesn't exist or ../xml/wfc.nps00032.xml is newer...
+converting wfc.nps00032.xml...
+
+Posting file wfc.nps00032.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00040.xml doesn't exist or ../xml/wfc.nps00040.xml is newer...
+converting wfc.nps00040.xml...
+
+Posting file wfc.nps00040.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00041.xml doesn't exist or ../xml/wfc.nps00041.xml is newer...
+converting wfc.nps00041.xml...
+
+Posting file wfc.nps00041.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00042.xml doesn't exist or ../xml/wfc.nps00042.xml is newer...
+converting wfc.nps00042.xml...
+
+Posting file wfc.nps00042.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00043.xml doesn't exist or ../xml/wfc.nps00043.xml is newer...
+converting wfc.nps00043.xml...
+
+Posting file wfc.nps00043.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00044.xml doesn't exist or ../xml/wfc.nps00044.xml is newer...
+converting wfc.nps00044.xml...
+
+Posting file wfc.nps00044.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00045.xml doesn't exist or ../xml/wfc.nps00045.xml is newer...
+converting wfc.nps00045.xml...
+
+Posting file wfc.nps00045.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00046.xml doesn't exist or ../xml/wfc.nps00046.xml is newer...
+converting wfc.nps00046.xml...
+
+Posting file wfc.nps00046.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00047.xml doesn't exist or ../xml/wfc.nps00047.xml is newer...
+converting wfc.nps00047.xml...
+
+Posting file wfc.nps00047.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps00546.xml doesn't exist or ../xml/wfc.nps00546.xml is newer...
+converting wfc.nps00546.xml...
+
+Posting file wfc.nps00546.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01140.xml doesn't exist or ../xml/wfc.nps01140.xml is newer...
+converting wfc.nps01140.xml...
+
+Posting file wfc.nps01140.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01191.xml doesn't exist or ../xml/wfc.nps01191.xml is newer...
+converting wfc.nps01191.xml...
+
+Posting file wfc.nps01191.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01402.xml doesn't exist or ../xml/wfc.nps01402.xml is newer...
+converting wfc.nps01402.xml...
+
+Posting file wfc.nps01402.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01426.xml doesn't exist or ../xml/wfc.nps01426.xml is newer...
+converting wfc.nps01426.xml...
+
+Posting file wfc.nps01426.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01619.xml doesn't exist or ../xml/wfc.nps01619.xml is newer...
+converting wfc.nps01619.xml...
+
+Posting file wfc.nps01619.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01620.xml doesn't exist or ../xml/wfc.nps01620.xml is newer...
+converting wfc.nps01620.xml...
+
+Posting file wfc.nps01620.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01674.xml doesn't exist or ../xml/wfc.nps01674.xml is newer...
+converting wfc.nps01674.xml...
+
+Posting file wfc.nps01674.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01863.xml doesn't exist or ../xml/wfc.nps01863.xml is newer...
+converting wfc.nps01863.xml...
+
+Posting file wfc.nps01863.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01887.xml doesn't exist or ../xml/wfc.nps01887.xml is newer...
+converting wfc.nps01887.xml...
+
+Posting file wfc.nps01887.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01905.xml doesn't exist or ../xml/wfc.nps01905.xml is newer...
+converting wfc.nps01905.xml...
+
+Posting file wfc.nps01905.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps01985.xml doesn't exist or ../xml/wfc.nps01985.xml is newer...
+converting wfc.nps01985.xml...
+
+Posting file wfc.nps01985.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps02735.xml doesn't exist or ../xml/wfc.nps02735.xml is newer...
+converting wfc.nps02735.xml...
+
+Posting file wfc.nps02735.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps02950.xml doesn't exist or ../xml/wfc.nps02950.xml is newer...
+converting wfc.nps02950.xml...
+
+Posting file wfc.nps02950.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03102.xml doesn't exist or ../xml/wfc.nps03102.xml is newer...
+converting wfc.nps03102.xml...
+
+Posting file wfc.nps03102.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03150.xml doesn't exist or ../xml/wfc.nps03150.xml is newer...
+converting wfc.nps03150.xml...
+
+Posting file wfc.nps03150.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03151.xml doesn't exist or ../xml/wfc.nps03151.xml is newer...
+converting wfc.nps03151.xml...
+
+Posting file wfc.nps03151.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03178.xml doesn't exist or ../xml/wfc.nps03178.xml is newer...
+converting wfc.nps03178.xml...
+
+Posting file wfc.nps03178.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03436.xml doesn't exist or ../xml/wfc.nps03436.xml is newer...
+converting wfc.nps03436.xml...
+
+Posting file wfc.nps03436.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03437.xml doesn't exist or ../xml/wfc.nps03437.xml is newer...
+converting wfc.nps03437.xml...
+
+Posting file wfc.nps03437.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps03944.xml doesn't exist or ../xml/wfc.nps03944.xml is newer...
+converting wfc.nps03944.xml...
+
+Posting file wfc.nps03944.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04699.xml doesn't exist or ../xml/wfc.nps04699.xml is newer...
+converting wfc.nps04699.xml...
+
+Posting file wfc.nps04699.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04700.xml doesn't exist or ../xml/wfc.nps04700.xml is newer...
+converting wfc.nps04700.xml...
+
+Posting file wfc.nps04700.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04725.xml doesn't exist or ../xml/wfc.nps04725.xml is newer...
+converting wfc.nps04725.xml...
+
+Posting file wfc.nps04725.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04727.xml doesn't exist or ../xml/wfc.nps04727.xml is newer...
+converting wfc.nps04727.xml...
+
+Posting file wfc.nps04727.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04787.xml doesn't exist or ../xml/wfc.nps04787.xml is newer...
+converting wfc.nps04787.xml...
+
+Posting file wfc.nps04787.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04788.xml doesn't exist or ../xml/wfc.nps04788.xml is newer...
+converting wfc.nps04788.xml...
+
+Posting file wfc.nps04788.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps04789.xml doesn't exist or ../xml/wfc.nps04789.xml is newer...
+converting wfc.nps04789.xml...
+
+Posting file wfc.nps04789.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps05473.xml doesn't exist or ../xml/wfc.nps05473.xml is newer...
+converting wfc.nps05473.xml...
+
+Posting file wfc.nps05473.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.nps05518.xml doesn't exist or ../xml/wfc.nps05518.xml is newer...
+converting wfc.nps05518.xml...
+
+Posting file wfc.nps05518.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.nsp00001.xml doesn't exist or ../xml/wfc.nsp00001.xml is newer...
+converting wfc.nsp00001.xml...
+
+Posting file wfc.nsp00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">8</int></lst>
+</response>
+
+file ../xml/solr/wfc.nsp03150.xml doesn't exist or ../xml/wfc.nsp03150.xml is newer...
+converting wfc.nsp03150.xml...
+
+Posting file wfc.nsp03150.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.paintings.xml doesn't exist or ../xml/wfc.paintings.xml is newer...
+converting wfc.paintings.xml...
+
+Posting file wfc.paintings.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">15</int></lst>
+</response>
+
+file ../xml/solr/wfc.papers.00001.xml doesn't exist or ../xml/wfc.papers.00001.xml is newer...
+converting wfc.papers.00001.xml...
+
+Posting file wfc.papers.00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.papers.00002.xml doesn't exist or ../xml/wfc.papers.00002.xml is newer...
+converting wfc.papers.00002.xml...
+
+Posting file wfc.papers.00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.papers.00003.xml doesn't exist or ../xml/wfc.papers.00003.xml is newer...
+converting wfc.papers.00003.xml...
+
+Posting file wfc.papers.00003.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.papers.00004.xml doesn't exist or ../xml/wfc.papers.00004.xml is newer...
+converting wfc.papers.00004.xml...
+
+Posting file wfc.papers.00004.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">3</int></lst>
+</response>
+
+file ../xml/solr/wfc.papers.00005.xml doesn't exist or ../xml/wfc.papers.00005.xml is newer...
+converting wfc.papers.00005.xml...
+
+Posting file wfc.papers.00005.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.per00001.xml doesn't exist or ../xml/wfc.per00001.xml is newer...
+converting wfc.per00001.xml...
+
+Posting file wfc.per00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">4</int></lst>
+</response>
+
+file ../xml/solr/wfc.per00003.xml doesn't exist or ../xml/wfc.per00003.xml is newer...
+converting wfc.per00003.xml...
+
+Posting file wfc.per00003.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">12</int></lst>
+</response>
+
+file ../xml/solr/wfc.per00004.xml doesn't exist or ../xml/wfc.per00004.xml is newer...
+converting wfc.per00004.xml...
+
+Posting file wfc.per00004.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">6</int></lst>
+</response>
+
+file ../xml/solr/wfc.per00005.xml doesn't exist or ../xml/wfc.per00005.xml is newer...
+converting wfc.per00005.xml...
+
+Posting file wfc.per00005.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">5</int></lst>
+</response>
+
+file ../xml/solr/wfc.per00006.xml doesn't exist or ../xml/wfc.per00006.xml is newer...
+converting wfc.per00006.xml...
+
+Posting file wfc.per00006.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">20</int></lst>
+</response>
+
+file ../xml/solr/wfc.person.xml doesn't exist or ../xml/wfc.person.xml is newer...
+converting wfc.person.xml...
+
+Posting file wfc.person.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.photographs.xml doesn't exist or ../xml/wfc.photographs.xml is newer...
+converting wfc.photographs.xml...
+
+Posting file wfc.photographs.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">136</int></lst>
+</response>
+
+file ../xml/solr/wfc.postcards.xml doesn't exist or ../xml/wfc.postcards.xml is newer...
+converting wfc.postcards.xml...
+
+Posting file wfc.postcards.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">15</int></lst>
+</response>
+
+file ../xml/solr/wfc.posters.xml doesn't exist or ../xml/wfc.posters.xml is newer...
+converting wfc.posters.xml...
+
+Posting file wfc.posters.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">15</int></lst>
+</response>
+
+file ../xml/solr/wfc.prog.1883.xml doesn't exist or ../xml/wfc.prog.1883.xml is newer...
+converting wfc.prog.1883.xml...
+
+Posting file wfc.prog.1883.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">23</int></lst>
+</response>
+
+file ../xml/solr/wfc.smithsonian.xml doesn't exist or ../xml/wfc.smithsonian.xml is newer...
+converting wfc.smithsonian.xml...
+
+Posting file wfc.smithsonian.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">0</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00001.xml doesn't exist or ../xml/wfc.vid00001.xml is newer...
+converting wfc.vid00001.xml...
+
+Posting file wfc.vid00001.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00002.xml doesn't exist or ../xml/wfc.vid00002.xml is newer...
+converting wfc.vid00002.xml...
+
+Posting file wfc.vid00002.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00003.xml doesn't exist or ../xml/wfc.vid00003.xml is newer...
+converting wfc.vid00003.xml...
+
+Posting file wfc.vid00003.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00004.xml doesn't exist or ../xml/wfc.vid00004.xml is newer...
+converting wfc.vid00004.xml...
+
+Posting file wfc.vid00004.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">2</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00005.xml doesn't exist or ../xml/wfc.vid00005.xml is newer...
+converting wfc.vid00005.xml...
+
+Posting file wfc.vid00005.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00006.xml doesn't exist or ../xml/wfc.vid00006.xml is newer...
+converting wfc.vid00006.xml...
+
+Posting file wfc.vid00006.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00007.xml doesn't exist or ../xml/wfc.vid00007.xml is newer...
+converting wfc.vid00007.xml...
+
+Posting file wfc.vid00007.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00008.xml doesn't exist or ../xml/wfc.vid00008.xml is newer...
+converting wfc.vid00008.xml...
+
+Posting file wfc.vid00008.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00009.xml doesn't exist or ../xml/wfc.vid00009.xml is newer...
+converting wfc.vid00009.xml...
+
+Posting file wfc.vid00009.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00010.xml doesn't exist or ../xml/wfc.vid00010.xml is newer...
+converting wfc.vid00010.xml...
+
+Posting file wfc.vid00010.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+file ../xml/solr/wfc.vid00011.xml doesn't exist or ../xml/wfc.vid00011.xml is newer...
+converting wfc.vid00011.xml...
+
+Posting file wfc.vid00011.xml to http://jetson:8080/solr/cody/update...
+Result:
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst>
+</response>
+
+Committing solr results...
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">1054</int></lst>
+</response>
+
+Optimizing solr results...
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">768</int></lst>
+</response>
+

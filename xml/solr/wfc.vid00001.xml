@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.vid00001</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Parade of Buffalo Bill's Wild West Show No. 2</field>
+      <field name="category">Multimedia</field>
+      <field name="subCategory">Video</field>
+      <field name="date">1898</field>
+      <field name="dateSearch">1898</field>
+      <field name="year">1898</field>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="keywords">Parade</field>
+      <field name="keywords">Horses</field>
+      <field name="keywords">Cossacks</field>
+      <field name="keywords">Vaqueros</field>
+      <field name="imageID">icon-video</field>
+      <field name="text"> 
+        
+            
+
+                Parade of Buffalo Bill's Wild West Show No. 2
+    
+
+
+            
+
+        
+    </field>
+   </doc>
+</add>
