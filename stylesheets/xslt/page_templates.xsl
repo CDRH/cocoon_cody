@@ -94,7 +94,7 @@
             </xsl:variable>
             
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
-                <!-- Karin here is another one -->
+                
                 <xsl:variable name="numFound" select="//result/@numFound"/>
 
 
@@ -512,7 +512,6 @@
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
                 
                 <xsl:variable name="searchTerm" select="substring(//str[@name='q'],2,string-length(//str[@name='q'])-2)"/>
-		<!-- Karin, numFound is being compared below to a number, possibly this needs to be made into an integer or number here? -->
                 <xsl:variable name="numFound" select="//result/@numFound"/>
                 
                 <!-- This choose adds the subcategory name to non searchresults -->
@@ -526,7 +525,6 @@
                 </xsl:choose>
                 
                 <p class="searchResultText"><xsl:value-of select="$numFound"/> <xsl:text> item</xsl:text>
-			<!-- Karin, this is one of the spots I have found where this happens -->
                     <xsl:if test="$numFound > 1"><xsl:text>s</xsl:text></xsl:if>
                     
                     <!-- This choose adds the search phrase to the search results -->

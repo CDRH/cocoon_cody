@@ -18,8 +18,8 @@
   <xsl:param name="pageid">unset</xsl:param>
   <xsl:param name="sort">unset</xsl:param>
   <xsl:param name="imageno">unset</xsl:param>
-  <xsl:param name="start">0</xsl:param>
-  <xsl:param name="rows">50</xsl:param>
+  <xsl:param name="start" as="xs:integer">0</xsl:param>
+  <xsl:param name="rows" as="xs:integer">10</xsl:param>
   <xsl:param name="q"></xsl:param>
   <xsl:param name="fq">unset</xsl:param>
   
