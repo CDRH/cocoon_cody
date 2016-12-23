@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.vid00005</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">The Life of Buffalo Bill Part 3</field>
+      <field name="category">Multimedia</field>
+      <field name="subCategory">Video</field>
+      <field name="date"/>
+      <field name="dateSearch"/>
+      <field name="year"/>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="keywords">Deadwood Stagecoach</field>
+      <field name="keywords">Native Americans</field>
+      <field name="imageID">icon-video</field>
+      <field name="text"> 
+        
+            
+
+                The Life of Buffalo Bill Part 3
+   
+   
+
+            
+
+        
+    </field>
+   </doc>
+</add>

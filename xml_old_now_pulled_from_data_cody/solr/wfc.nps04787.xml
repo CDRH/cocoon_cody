@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.nps04787</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Cody Combats Jones</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Newspapers</field>
+      <field name="date">December 25, 1899</field>
+      <field name="dateSearch">1899-12-25</field>
+      <field name="year">1899</field>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="topic">Show Indians</field>
+      <field name="keywords"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="people"/>
+      <field name="places">Omaha (Nebr.)</field>
+      <field name="places">Washington, D.C.</field>
+      <field name="imageID">icon-newspapers</field>
+      <field name="text"> 
+        
+            
+                
+                Cody Combats Jones.
+                Wants the Order Keeping Reds on Reservation Rescinded.
+                
+                "Buffalo Bill," Colonel W. F. Cody, passed through Omaha today en route to Washington, to urge the Indian commissioner to rescind his recent order prohibiting Indians from leaving the reservations to travel with the shows.  Colonel Cody combats the argument used by the commissioner that the Indians are demoralized by being out on the road with shows.  He says the experiences they meet with in their travels better fit them to adopt the manners and customs of the white men than does life on the reservation. He claims that the redskins are benefited rather than injured as members of traveling organizations, which portray life on the plains.
+            
+            
+            
+        
+    </field>
+   </doc>
+</add>

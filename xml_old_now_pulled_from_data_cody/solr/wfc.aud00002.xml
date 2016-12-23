@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.aud00002</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Cody's Tribute to Edison</field>
+      <field name="category">Multimedia</field>
+      <field name="subCategory">Audio</field>
+      <field name="date"/>
+      <field name="dateSearch"/>
+      <field name="year"/>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="keywords">Thomas Edison</field>
+      <field name="keywords">technology</field>
+      <field name="keywords">phonograph</field>
+      <field name="imageID">icon-audio</field>
+      <field name="text"> 
+        
+            
+
+
+                Cody's Tribute to Edison
+
+                
+                    
+                    
+
+                    
+                
+
+                It is a great pleasure to see this wonder working man at his task and to find
+                    that though he is super man to all the world, he is very human at home and among
+                    those who labor with him.
+
+                He has made the dynamo that has changed the world. It seems almost uncanny that
+                    the voice in this place can be perpetuated and that he has set out to the world
+                    his phonograph, which have given more entertainment and pleasure than any
+                    invention in the history of the world.
+
+                Courtesy of the G. Robert Vincent Voice Library of the Michigan State University
+                    Libraries.
+
+            
+
+        
+    </field>
+   </doc>
+</add>

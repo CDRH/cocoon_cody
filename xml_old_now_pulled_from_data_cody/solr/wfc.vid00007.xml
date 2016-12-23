@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.vid00007</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">The Grand Review</field>
+      <field name="category">Multimedia</field>
+      <field name="subCategory">Video</field>
+      <field name="date"/>
+      <field name="dateSearch"/>
+      <field name="year"/>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="keywords">Native Americans</field>
+      <field name="keywords">Cavalry</field>
+      <field name="keywords">Horsemanship</field>
+      <field name="keywords">Germans</field>
+      <field name="keywords">Arabs</field>
+      <field name="keywords">Japanese</field>
+      <field name="keywords">French</field>
+      <field name="keywords">Russians</field>
+      <field name="imageID">icon-video</field>
+      <field name="text"> 
+        
+            
+
+                The Grand Review
+   
+
+
+            
+
+        
+    </field>
+   </doc>
+</add>

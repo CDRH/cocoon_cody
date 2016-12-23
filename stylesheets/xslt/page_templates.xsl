@@ -12,22 +12,19 @@
     <xsl:template name="mainContent">
         
         <!-- variables, for testing. -->
-        <ul>
+        <!--<ul>
             <li>pagetype: <xsl:value-of select="$pagetype"/></li>
             <li>subCategory: <xsl:value-of select="$subCategory"/></li>
             <li>searchtype: <xsl:value-of select="$searchtype"/></li>
             <li>pageid: <xsl:value-of select="$pageid"/></li>
             <li>sort: <xsl:value-of select="$sort"/></li>
             <li>imageno: <xsl:value-of select="$imageno"/></li>
-          <li>start_num: <xsl:value-of select="$start_num"/></li>
-          <li>rows_num: <xsl:value-of select="$rows_num"/></li>
             <li>start: <xsl:value-of select="$start"/></li>
             <li>rows: <xsl:value-of select="$rows"/></li>
-          <li>test: <xsl:value-of select="$test"/></li>
             <li>q: <xsl:value-of select="$q"/></li>
             <li>fq: <xsl:value-of select="$fq"/></li>
 
-        </ul>
+        </ul>-->
 
         
         <!-- =====================================================================================
@@ -78,7 +75,7 @@
             
             <xsl:variable name="solrsearchurl">
                 <xsl:call-template name="solrURL">
-                    <xsl:with-param name="rowstart"><xsl:value-of select="$start_num"/></xsl:with-param>
+                    <xsl:with-param name="rowstart"><xsl:value-of select="$start"/></xsl:with-param>
                     <xsl:with-param name="rowend">12</xsl:with-param>
                     <xsl:with-param name="searchfields">id,titleMain,category,subCategory,itemCategory,date,imageID</xsl:with-param>
                     <xsl:with-param name="facet">false</xsl:with-param>
@@ -97,7 +94,7 @@
             </xsl:variable>
             
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
-                
+                <!-- Karin here is another one -->
                 <xsl:variable name="numFound" select="//result/@numFound"/>
 
 
@@ -515,6 +512,7 @@
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
                 
                 <xsl:variable name="searchTerm" select="substring(//str[@name='q'],2,string-length(//str[@name='q'])-2)"/>
+		<!-- Karin, numFound is being compared below to a number, possibly this needs to be made into an integer or number here? -->
                 <xsl:variable name="numFound" select="//result/@numFound"/>
                 
                 <!-- This choose adds the subcategory name to non searchresults -->
@@ -528,6 +526,7 @@
                 </xsl:choose>
                 
                 <p class="searchResultText"><xsl:value-of select="$numFound"/> <xsl:text> item</xsl:text>
+			<!-- Karin, this is one of the spots I have found where this happens -->
                     <xsl:if test="$numFound > 1"><xsl:text>s</xsl:text></xsl:if>
                     
                     <!-- This choose adds the search phrase to the search results -->
@@ -710,8 +709,8 @@
     <xsl:param name="baseLinkURL"/>
     <xsl:param name="searchTerm"/>
     <xsl:param name="numFound"/>
-    <xsl:param name="startpage"></xsl:param> <!-- defaults to 0, unless changed in cocoon sitemap -->
-    <xsl:param name="rowspage"></xsl:param> <!-- defaults to 10, unless changed in cocoon sitemap -->
+    <xsl:param name="start"/> <!-- defaults to 0, unless changed in cocoon sitemap -->
+    <xsl:param name="rows"/> <!-- defaults to 10, unless changed in cocoon sitemap -->
     <xsl:param name="sort"/>
 
     <xsl:variable name="prev-link">

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.css00010</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Letter from William F. Cody to John R. Brennan, October 28, 1907</field>
+      <field name="category">Texts</field>
+      <field name="subCategory">Correspondence</field>
+      <field name="date">October 28, 1907</field>
+      <field name="dateSearch">1907-10-28</field>
+      <field name="year">1907</field>
+      <field name="author">Cody, William Frederick, 1846-1917</field>
+      <field name="topic">Show Indians</field>
+      <field name="keywords">Wages</field>
+      <field name="people">Brennan, John R.</field>
+      <field name="places">Pine Ridge Indian Reservation (S.D.)</field>
+      <field name="imageID">wfc.css00010_img_0</field>
+      <field name="text"> 
+
+
+
+
+
+
+
+
+[Letterhead imprint: Buffalo Bill's Wild West]
+
+Ferrill, Texas
+Oct 28th, 07
+
+
+
+
+Major John R. Brennan.
+Agent Pine Ridge Agency
+So. Dak.
+
+
+My Dear Major,
+
+
+
+The Indians with me want a favor. And as they have been such good men I hope you will grant it.
+
+They have been saving and bought a great many useful things to take home. But they are shy a bunch and it breaks an Indians heart to go home without a trunk.
+
+They would like to have $10 each the $25 a month men. The Chiefs $15 each. This to be taken from their last month and back pay that is to be paid them in your presence.
+
+Hope you will grant their request.
+
+
+Very faithfully yours
+W. F. Cody
+
+
+
+ 
+
+
+
+
+
+</field>
+   </doc>
+</add>

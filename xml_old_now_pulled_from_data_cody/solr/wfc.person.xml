@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <doc>
+      <field name="id">wfc.000.person</field>
+      <field name="itemCategory">texts</field>
+      <field name="titleMain">Biographical Sketches</field>
+      <field name="category"/>
+      <field name="subCategory"/>
+      <field name="date"/>
+      <field name="dateSearch"/>
+      <field name="year"/>
+      <field name="author"/>
+      <field name="topic"/>
+      <field name="keywords"/>
+      <field name="people"/>
+      <field name="places"/>
+      <field name="imageID">icon-</field>
+      <field name="text"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</field>
+   </doc>
+</add>

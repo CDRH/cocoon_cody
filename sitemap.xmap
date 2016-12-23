@@ -247,9 +247,8 @@
                     <map:parameter name="subCategory" value="{1}"/>
                     <map:parameter name="pagetype" value="imagesGallery" />
                     <map:parameter name="use-request-parameters" value="true"/>
-                  <map:parameter name="start_num" value="0" />
-                    <map:parameter name="rows_num" value="12" />
-                  <map:parameter name="test" value="test" />
+                    <map:parameter name="start" value="0" />
+                    <map:parameter name="rows" value="12" />
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
             </map:match>
@@ -261,9 +260,8 @@
                     <map:parameter name="subCategory" value="{1}"/>
                     <map:parameter name="pagetype" value="imagesGallery" />
                     <map:parameter name="use-request-parameters" value="true"/>
-                    <map:parameter name="start_num" value="0" />
-                    <map:parameter name="rows_num" value="12" />
-                  <map:parameter name="test" value="test" />
+                    <map:parameter name="start" value="0" />
+                    <map:parameter name="rows" value="12" />
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
             </map:match>
