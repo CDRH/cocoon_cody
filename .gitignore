@@ -4,3 +4,5 @@ audio/*
 config.xsl
 post.py
 data_cody/*
+
+.DS_Store
