@@ -62,7 +62,7 @@
         ===================================================================================== -->
         <xsl:if test="$pagetype = 'images'">
             <xsl:for-each select="/" xpath-default-namespace="">
-            <xsl:copy-of select="document('../../xml/wfc.000.images.xml')/TEI/text/body/div1"
+            <xsl:copy-of select="document('../../structure/wfc.000.images.xml')/TEI/text/body/div1"
                 xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
         </xsl:for-each>
         </xsl:if>
