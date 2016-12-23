@@ -50,7 +50,7 @@
             Remove this if you use the .htaccess -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-        <title>William F. Cody Archive</title>
+        <title>William F. Cody Archive: Documenting the life and times of Buffalo Bill</title>
         
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"/>
@@ -108,7 +108,7 @@
         <div id="container">
           <div id="header">
             <h1>
-              <a href="{$siteroot}"><span>The William F. Cody Archive:</span> Documenting the life and times of an American icon</a>
+              <a href="{$siteroot}"><span>The William F. Cody Archive:</span> Documenting the life and times of Buffalo Bill</a>
             </h1>
             <div id="nav">
 

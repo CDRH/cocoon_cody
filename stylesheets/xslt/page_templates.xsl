@@ -94,7 +94,7 @@
             </xsl:variable>
             
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
-                
+                <!-- Karin here is another one -->
                 <xsl:variable name="numFound" select="//result/@numFound"/>
 
 
@@ -512,6 +512,7 @@
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
                 
                 <xsl:variable name="searchTerm" select="substring(//str[@name='q'],2,string-length(//str[@name='q'])-2)"/>
+		<!-- Karin, numFound is being compared below to a number, possibly this needs to be made into an integer or number here? -->
                 <xsl:variable name="numFound" select="//result/@numFound"/>
                 
                 <!-- This choose adds the subcategory name to non searchresults -->
@@ -525,6 +526,7 @@
                 </xsl:choose>
                 
                 <p class="searchResultText"><xsl:value-of select="$numFound"/> <xsl:text> item</xsl:text>
+			<!-- Karin, this is one of the spots I have found where this happens -->
                     <xsl:if test="$numFound > 1"><xsl:text>s</xsl:text></xsl:if>
                     
                     <!-- This choose adds the search phrase to the search results -->
@@ -927,15 +929,6 @@
                 </xsl:if>
                 
                 
-                <!-- Sponsor rules -->
-                <xsl:if test="string(/TEI/teiHeader/fileDesc/titleStmt/sponsor[1])">
-                    <p>Sponsor: <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/sponsor">
-                        <xsl:value-of select="."/>
-                    </xsl:for-each>
-                    </p>
-                </xsl:if>
-                
-                
                 <!-- Date -->
                 <xsl:if test="string(/TEI/teiHeader/fileDesc/sourceDesc/bibl/date)">
                     <p> Date: <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/bibl/date"/></p>
@@ -975,6 +968,33 @@
                     </p>
                 </xsl:if>
                 
+
+                <!-- Related and Identical Documents -->
+				<xsl:for-each select="/TEI/teiHeader/fileDesc/sourceDesc/bibl/relatedItem">
+					<p> Also appeared as:
+						<p>&#160;&#160;Title: 
+							<xsl:if test="bibl/title[@type='main']/text()">
+								<xsl:value-of select="bibl/title[@type='main']"/>
+								<xsl:text> | </xsl:text>
+							</xsl:if>
+							<xsl:if test="bibl/title[@type='sub']/text()">
+								<xsl:value-of select="bibl/title[@type='sub']"/>
+							</xsl:if>
+						</p>
+						<xsl:if test="bibl/title[@level='j']/text()">
+							<p>&#160;&#160;Periodical:
+								<xsl:value-of select="bibl/title[@level='j']"/>
+							</p>
+						</xsl:if>
+						<xsl:if test="bibl/date/text()">
+							<p>&#160;&#160;Date:
+								<xsl:value-of select="bibl/date"/>
+							</p>
+						</xsl:if>
+					</p>
+				</xsl:for-each>
+
+
                 <!-- Topics -->
                 <xsl:if test="string(/TEI/teiHeader/profileDesc/textClass/keywords[@n='topic']/term[1])">
                     <p>
@@ -1096,6 +1116,16 @@
                     
                 </xsl:if>
                 
+                
+                <!-- Sponsor rules -->
+                <xsl:if test="string(/TEI/teiHeader/fileDesc/titleStmt/sponsor[1])">
+                    <p>Sponsor: <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/sponsor">
+                        <xsl:value-of select="."/>
+                    </xsl:for-each>
+                    </p>
+                </xsl:if>
+
+
                 <!-- Editorial statement and Conditions of use -->
                 
                 <p><a href="{$siteroot}about/#editorial_statement">Editorial Statement</a> | <a href="{$siteroot}about/#conditions">Conditions of Use</a></p>

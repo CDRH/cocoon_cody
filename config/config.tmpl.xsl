@@ -7,7 +7,7 @@
           http://example.com/~user/project/cody/
     -->
     <xsl:variable name="siteroot">http://codyarchive.org/</xsl:variable>
-    <xsl:variable name="searchroot">http://searchurl.com/solr/cody/select/?version=2.2&amp;indent=on</xsl:variable>
+    <xsl:variable name="searchroot">http://localhost:8983/solr/cody/select/?version=2.2&amp;indent=on</xsl:variable>
     <xsl:variable name="fileroot">http://codyarchive.org/</xsl:variable>
 
 </xsl:stylesheet>
