@@ -84,7 +84,7 @@
                         <xsl:text>&amp;fq=category:Images</xsl:text>
                         
                         <xsl:text>&amp;fq=subCategory:&quot;</xsl:text>
-                        <xsl:value-of select="replace(lower-case($subCategory), '_', '%20')"/>
+                        <xsl:value-of select="lower-case($subCategory)"/>
                         <xsl:text>&quot;</xsl:text>
                     </xsl:with-param>
                     <xsl:with-param name="q">*:*</xsl:with-param>
@@ -94,7 +94,7 @@
             </xsl:variable>
             
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
-                <!-- Karin here is another one -->
+                
                 <xsl:variable name="numFound" select="//result/@numFound"/>
 
 
@@ -307,7 +307,7 @@
                         </p>
                         
                         <!-- a way to include the audio inline. May need to be disabled if it is too server intensive -->
-                        <!--<p><xsl:for-each select="document('../../xml/wfc.aud.69.236.13.xml')">
+                        <!--<p><xsl:for-each select="document('../../strcture/wfc.aud.69.236.13.xml')">
                             <xsl:copy-of select="//tei:div1"/>
                         </xsl:for-each></p>-->
                         
@@ -512,7 +512,6 @@
             <xsl:for-each select="document($solrsearchurl)" xpath-default-namespace="">
                 
                 <xsl:variable name="searchTerm" select="substring(//str[@name='q'],2,string-length(//str[@name='q'])-2)"/>
-		<!-- Karin, numFound is being compared below to a number, possibly this needs to be made into an integer or number here? -->
                 <xsl:variable name="numFound" select="//result/@numFound"/>
                 
                 <!-- This choose adds the subcategory name to non searchresults -->
@@ -526,7 +525,6 @@
                 </xsl:choose>
                 
                 <p class="searchResultText"><xsl:value-of select="$numFound"/> <xsl:text> item</xsl:text>
-			<!-- Karin, this is one of the spots I have found where this happens -->
                     <xsl:if test="$numFound > 1"><xsl:text>s</xsl:text></xsl:if>
                     
                     <!-- This choose adds the search phrase to the search results -->
@@ -642,7 +640,9 @@
                                 <xsl:value-of select="$category"/>
                             </span>
                             <span class="subsection">
-                                <xsl:value-of select="$subCategory"/>
+                                <xsl:call-template name="title_case">
+                                    <xsl:with-param name="string"><xsl:value-of select="replace($subCategory,'_',' ')"/></xsl:with-param>
+                                </xsl:call-template>
                             </span>
                         </p>
                         <h3>
@@ -687,7 +687,7 @@
     </xsl:template>
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Pagination Code
+        Title Case
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <xsl:template name="title_case">
@@ -709,13 +709,13 @@
     <xsl:param name="baseLinkURL"/>
     <xsl:param name="searchTerm"/>
     <xsl:param name="numFound"/>
-    <xsl:param name="start"/> <!-- defaults to 0, unless changed in cocoon sitemap -->
-    <xsl:param name="rows"/> <!-- defaults to 10, unless changed in cocoon sitemap -->
+      <xsl:param name="start_pagination" as="xs:integer"><xsl:value-of select="$start"/></xsl:param> <!-- defaults to 0, unless changed in cocoon sitemap -->
+      <xsl:param name="rows_pagination" as="xs:integer"><xsl:value-of select="$rows"/></xsl:param> <!-- defaults to 10, unless changed in cocoon sitemap -->
     <xsl:param name="sort"/>
 
     <xsl:variable name="prev-link">
       <xsl:choose>
-        <xsl:when test="$start &lt;= 0">
+        <xsl:when test="$start_pagination &lt;= 0">
           <xsl:text>Previous</xsl:text>
         </xsl:when>
         <xsl:otherwise>
@@ -727,10 +727,10 @@
                 <xsl:value-of select="$q"/>
                 <xsl:text>&#38;</xsl:text>
               </xsl:if>
-              <xsl:text>start_num=</xsl:text>
-              <xsl:value-of select="$start - $rows"/>
-              <xsl:text>&#38;rows_num=</xsl:text>
-              <xsl:value-of select="$rows"/>
+              <xsl:text>start=</xsl:text>
+                <xsl:value-of select="$start_pagination - $rows_pagination"/>
+              <xsl:text>&#38;rows=</xsl:text>
+                <xsl:value-of select="$rows_pagination"/>
                 <xsl:if test="$sort != 'unset'">
                     <xsl:text>&amp;sort=</xsl:text>
                     <xsl:value-of select="$sort"/>
@@ -744,7 +744,7 @@
 
     <xsl:variable name="next-link">
       <xsl:choose>
-        <xsl:when test="$start + $rows &gt;= $numFound">
+          <xsl:when test="$start_pagination + $rows_pagination &gt;= $numFound">
           <xsl:text>Next</xsl:text>
         </xsl:when>
         <xsl:otherwise>
@@ -756,10 +756,10 @@
                 <xsl:value-of select="$q"/>
                 <xsl:text>&#38;</xsl:text>
               </xsl:if>
-              <xsl:text>start_num=</xsl:text>
-              <xsl:value-of select="$start + $rows"/>
-              <xsl:text>&#38;rows_num=</xsl:text>
-              <xsl:value-of select="$rows"/>
+              <xsl:text>start=</xsl:text>
+                <xsl:value-of select="$start_pagination + $rows_pagination"/>
+              <xsl:text>&#38;rows=</xsl:text>
+                <xsl:value-of select="$rows_pagination"/>
                 <xsl:if test="$sort != 'unset'">
                     <xsl:text>&amp;sort=</xsl:text>
                     <xsl:value-of select="$sort"/>
@@ -773,10 +773,10 @@
 
     <!-- Pagination HTML -->
     <div class="pagination"><xsl:copy-of select="$prev-link"/> | Go to page <form class="jumpForm">
-        <input type="text" name="paginationJump" value="{$start div $rows + 1}"
+        <input type="text" name="paginationJump" value="{format-number($start_pagination div $rows_pagination + 1, '0')}"
           class="paginationJump"/>
         <input type="submit" value="Go" class="paginationJumpBtn submit"/>
-      </form> of <xsl:value-of select="ceiling($numFound div $rows)"/> | <xsl:copy-of
+    </form> of <xsl:value-of select="ceiling($numFound div $rows_pagination)"/> | <xsl:copy-of
         select="$next-link"/>
     </div><div class="paginationline">&#160;</div>
     <!-- /end Pagination HTML -->
@@ -929,6 +929,15 @@
                 </xsl:if>
                 
                 
+                <!-- Sponsor rules -->
+                <xsl:if test="string(/TEI/teiHeader/fileDesc/titleStmt/sponsor[1])">
+                    <p>Sponsor: <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/sponsor">
+                        <xsl:value-of select="."/>
+                    </xsl:for-each>
+                    </p>
+                </xsl:if>
+                
+                
                 <!-- Date -->
                 <xsl:if test="string(/TEI/teiHeader/fileDesc/sourceDesc/bibl/date)">
                     <p> Date: <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/bibl/date"/></p>
@@ -968,33 +977,6 @@
                     </p>
                 </xsl:if>
                 
-
-                <!-- Related and Identical Documents -->
-				<xsl:for-each select="/TEI/teiHeader/fileDesc/sourceDesc/bibl/relatedItem">
-					<p> Also appeared as:
-						<p>&#160;&#160;Title: 
-							<xsl:if test="bibl/title[@type='main']/text()">
-								<xsl:value-of select="bibl/title[@type='main']"/>
-								<xsl:text> | </xsl:text>
-							</xsl:if>
-							<xsl:if test="bibl/title[@type='sub']/text()">
-								<xsl:value-of select="bibl/title[@type='sub']"/>
-							</xsl:if>
-						</p>
-						<xsl:if test="bibl/title[@level='j']/text()">
-							<p>&#160;&#160;Periodical:
-								<xsl:value-of select="bibl/title[@level='j']"/>
-							</p>
-						</xsl:if>
-						<xsl:if test="bibl/date/text()">
-							<p>&#160;&#160;Date:
-								<xsl:value-of select="bibl/date"/>
-							</p>
-						</xsl:if>
-					</p>
-				</xsl:for-each>
-
-
                 <!-- Topics -->
                 <xsl:if test="string(/TEI/teiHeader/profileDesc/textClass/keywords[@n='topic']/term[1])">
                     <p>
@@ -1116,16 +1098,6 @@
                     
                 </xsl:if>
                 
-                
-                <!-- Sponsor rules -->
-                <xsl:if test="string(/TEI/teiHeader/fileDesc/titleStmt/sponsor[1])">
-                    <p>Sponsor: <xsl:for-each select="/TEI/teiHeader/fileDesc/titleStmt/sponsor">
-                        <xsl:value-of select="."/>
-                    </xsl:for-each>
-                    </p>
-                </xsl:if>
-
-
                 <!-- Editorial statement and Conditions of use -->
                 
                 <p><a href="{$siteroot}about/#editorial_statement">Editorial Statement</a> | <a href="{$siteroot}about/#conditions">Conditions of Use</a></p>

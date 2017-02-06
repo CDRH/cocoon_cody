@@ -18,14 +18,10 @@
   <xsl:param name="pageid">unset</xsl:param>
   <xsl:param name="sort">unset</xsl:param>
   <xsl:param name="imageno">unset</xsl:param>
-  <xsl:param name="start_num">0</xsl:param>
-  <xsl:param name="rows_num">50</xsl:param>
+  <xsl:param name="start">0</xsl:param>
+  <xsl:param name="rows">50</xsl:param>
   <xsl:param name="q"></xsl:param>
   <xsl:param name="fq">unset</xsl:param>
-  
-  <xsl:param name="start"><xsl:value-of select="number($start_num)"/></xsl:param>
-  <xsl:param name="rows"><xsl:value-of select="number($rows_num)"/></xsl:param>
-  
   
   <!--<xsl:param name="personAttribute">unset</xsl:param>-->
 
