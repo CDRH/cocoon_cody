@@ -336,7 +336,8 @@
     <xsl:param name="type"/>
     
     <xsl:choose>
-      <xsl:when test="$type = 'audio' or $type = 'video'"></xsl:when>
+      <!-- handled by "audio and video" below -->
+      <xsl:when test="$type = 'audio' or $type = 'video'"><xsl:apply-templates/></xsl:when>
       
       <xsl:when test="ancestor::*[name() = 'person']">
         <xsl:apply-templates/>
@@ -433,8 +434,6 @@
   
   <!-- ~~~~~~~ audio and video ~~~~~~~ -->
   
-  
-  
   <xsl:template match="media[@mimeType='audio/mp3']">
     
     <audio controls="controls">
@@ -448,11 +447,14 @@
   </xsl:template>
   
   <xsl:template match="media[@mimeType='video/mp4']">
-    <object width="560" height="315">
+    
+    <iframe width="560" height="315" src="{@url}" frameborder="0" allowfullscreen="true">&#160;</iframe>
+    
+    <!--<object width="560" height="315">
       <param name="movie" value="http://www.youtube.com/v/ITek7jSH8Uk?version=3&amp;hl=en_US"></param>
       <param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
       <embed src="{@url}" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
-    </object>
+    </object>-->
     
   </xsl:template>
   
