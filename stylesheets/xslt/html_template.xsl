@@ -75,13 +75,13 @@
         <script src="{$siteroot}plugins/jquery-ui-1.8.14.custom/js/jquery-ui-1.8.14.custom.min.js"> &#160; </script>
         
         <!--<script src="{$siteroot}js/plugins.js?v=1"> &#160; </script>-->
-<xsl:if test="$pagetype = 'search'">
+<!--<xsl:if test="$pagetype = 'search'">
         <script src="{$siteroot}js/solr/people.json"> &#160; </script>
         <script src="{$siteroot}js/solr/places.json"> &#160; </script>
         <script src="{$siteroot}js/solr/author.json"> &#160; </script>
         <script src="{$siteroot}js/solr/year.json"> &#160; </script>
-        <!--<script src="{$siteroot}js/script.js?v=1"> &#160; </script>-->
-</xsl:if>
+        <!-\-<script src="{$siteroot}js/script.js?v=1"> &#160; </script>-\->
+</xsl:if>-->
 
         <script type="text/javascript">
             

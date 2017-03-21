@@ -3,7 +3,7 @@
 
     <xsl:output method="xhtml" indent="yes" encoding="UTF-8"/>
 
-    <xsl:include href="config.xsl"/>
+    <xsl:include href="../../config/config.xsl"/>
 
     <xsl:param name="category"/>
 
