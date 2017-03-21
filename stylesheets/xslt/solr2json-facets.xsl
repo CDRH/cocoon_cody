@@ -5,7 +5,7 @@
     
     <xsl:param name="category">unset</xsl:param> <!-- for json files -->
 
-    <xsl:include href="../../config/config.xsl"/>
+    <xsl:include href="config.xsl"/>
     
     <xsl:template match="/">
         
