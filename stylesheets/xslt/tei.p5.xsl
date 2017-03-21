@@ -438,84 +438,19 @@
     
     <audio controls="controls">
       <source src="{$fileroot}audio/mp3/{@url}" type="audio/mpeg"/>
-      <source src="{$fileroot}audio/mp3/{substring-before(@url,'.mp3')}.ogg" type="audio/ogg"/> 
+      <source src="{$fileroot}audio/ogg/{substring-before(@url,'.mp3')}.ogg" type="audio/ogg"/> 
       <embed src="http://www.google.com/reader/ui/3523697345-audio-player.swf" flashvars="audioUrl={$fileroot}audio/mp3/{@url}" type="application/x-shockwave-flash" width="230" height="27" quality="best"/>
     </audio>
-    
-   
-    
+
   </xsl:template>
   
   <xsl:template match="media[@mimeType='video/mp4']">
     
     <iframe width="560" height="315" src="{@url}" frameborder="0" allowfullscreen="true">&#160;</iframe>
     
-    <!--<object width="560" height="315">
-      <param name="movie" value="http://www.youtube.com/v/ITek7jSH8Uk?version=3&amp;hl=en_US"></param>
-      <param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
-      <embed src="{@url}" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
-    </object>-->
-    
   </xsl:template>
   
 
-  <!--<xsl:template match="figure">
-    <xsl:choose>
-      <xsl:when test="ancestor::*[name() = 'person']">
-        <xsl:apply-templates/>
-      </xsl:when>
-      <xsl:when test="@n = 'illustration'">
-        
-        <span class="figure">
-          <span>
-            <a>
-              <xsl:attribute name="href">
-                <xsl:value-of select="$fileroot"/>
-                <xsl:text>figures/800/</xsl:text>
-                <xsl:value-of select="graphic/@facs"/>
-                <xsl:text>.jpg</xsl:text>
-              </xsl:attribute>
-              <xsl:attribute name="rel">
-                <xsl:text>prettyPhoto[pp_gal]</xsl:text>
-              </xsl:attribute>
-              <xsl:attribute name="title">
-                <xsl:text>&lt;a href="</xsl:text>
-                <xsl:value-of select="$fileroot"/>
-                <xsl:text>figures/800/</xsl:text>
-                <xsl:value-of select="graphic/@facs"/>
-                <xsl:text>.jpg</xsl:text>
-                <xsl:text>" target="_blank" &gt;open image in new window&lt;/a&gt;</xsl:text>
-              </xsl:attribute>
-              <img>
-                <xsl:attribute name="src">
-                  <xsl:value-of select="$fileroot"/>
-                  <xsl:text>figures/250/</xsl:text>
-                  <xsl:value-of select="graphic/@facs"/>
-                  <xsl:text>.jpg</xsl:text>
-                </xsl:attribute>
-              </img>
-            </a>
-          </span>
-        </span>
-        
-      
-      </xsl:when>
-      <xsl:otherwise>
-        <span class="figure">
-          <span>
-            <xsl:attribute name="class">
-              <xsl:value-of select="@n"/>
-              <xsl:text> figureDesc</xsl:text>
-            </xsl:attribute>
-            <xsl:text>[</xsl:text>
-            <xsl:value-of select="@n"/>
-            <xsl:text>]</xsl:text>
-          </span>
-          <xsl:apply-templates/>
-        </span>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>-->
 
   <xsl:template match="pb">
     <span class="hr">&#160;</span>
