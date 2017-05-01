@@ -795,6 +795,11 @@ ul {
 	list-style: none;
 }
 
+ul.tei_list_type_noindent {
+	margin: 0;
+	padding: 0;
+}
+
 ul.checklist_category.checklist {
 	margin: 0;
 	padding: 0;
