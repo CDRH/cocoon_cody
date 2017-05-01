@@ -109,6 +109,9 @@
     </xsl:choose>
   </xsl:template>
   
+  <xsl:template match="milestone">
+    <hr/>
+  </xsl:template>
 
   <xsl:template match="note">
     <xsl:choose>
@@ -173,9 +176,19 @@
   </xsl:template>
 
   <xsl:template match="list">
-    <ul>
-      <xsl:apply-templates/>
-    </ul>
+    <xsl:choose>
+      <xsl:when test="@type='noident' or @type='noindent'">
+        <ul class="tei_list_type_noindent">
+          <xsl:apply-templates/>
+        </ul>
+      </xsl:when>
+      <xsl:otherwise>
+        <ul>
+          <xsl:apply-templates/>
+        </ul>
+      </xsl:otherwise>
+    </xsl:choose>
+    
   </xsl:template>
 
   <xsl:template match="item">
