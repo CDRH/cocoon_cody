@@ -416,11 +416,16 @@
             <xsl:with-param name="type">video</xsl:with-param>
           </xsl:call-template>
         </xsl:when>
-        <xsl:when test="@n='illustration' or not(@n)">
+        <xsl:when test="@n='illustration'">
+          <xsl:call-template name="figure_formatter">
+            <xsl:with-param name="type">other</xsl:with-param>
+          </xsl:call-template>
+        </xsl:when>
+        <!--<xsl:when test="@n='illustration' or not(@n)">
           <xsl:call-template name="figure_formatter">
             <xsl:with-param name="type">illustration</xsl:with-param>
           </xsl:call-template>
-        </xsl:when>
+        </xsl:when>-->
         <xsl:otherwise>
           <xsl:call-template name="figure_formatter">
             <xsl:with-param name="type">other</xsl:with-param>
