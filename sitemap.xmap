@@ -75,16 +75,16 @@
             </map:match>
             
             <!-- Popup pages (testing) -->
-            <map:match pattern="popup/*/**/index.html">
+            <!--<map:match pattern="popup/*/**/index.html">
                 <map:generate src="data_cody/tei/wfc.{1}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="popup"/>
                     <map:parameter name="subCategory" value="{1}/{2}"/>
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
-            </map:match>
+            </map:match>-->
             
-            <!-- XML File display as HTML -->
+            <!-- TEI XML File display as HTML -->
             <map:match pattern="*/wfc.*.html">
                 <map:generate src="data_cody/tei/wfc.{2}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
@@ -93,8 +93,6 @@
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
             </map:match>
-            
-           
             
             <!-- XML File display as XML -->
             <map:match pattern="*/wfc.*.xml">
@@ -220,7 +218,7 @@
 
             <!-- View Images -->
             <map:match pattern="images/view/*/*">
-                <map:generate src="data_cody/dublin_core/wfc.{1}.xml" />
+                <map:generate src="data_cody/vra/{2}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                   <map:parameter name="use-request-parameters" value="true" />
                   <map:parameter name="pagetype" value="imagesView"/>
@@ -231,14 +229,14 @@
             
             <!-- View memorabilia as images (e.g. postcards) -->
             <map:match pattern="memorabilia/view/*/*">
-                <map:generate src="data_cody/dublin_core/wfc.{1}.xml" />
-                <map:transform src="stylesheets/xslt/tei.p5.xsl">
-                    <map:parameter name="use-request-parameters" value="true" />
-                    <map:parameter name="pagetype" value="imagesView"/>
-                    <map:parameter name="imageno" value="{2}"/>
-                </map:transform>
-                <map:serialize type="xhtmlutf8" />
-            </map:match>
+            <map:generate src="data_cody/vra/{2}.xml" />
+            <map:transform src="stylesheets/xslt/tei.p5.xsl">
+              <map:parameter name="use-request-parameters" value="true" />
+              <map:parameter name="pagetype" value="imagesView"/>
+              <map:parameter name="imageno" value="{2}"/>
+            </map:transform>
+            <map:serialize type="xhtmlutf8" />
+          </map:match>
 
             <!-- Image Search results -->
             <map:match pattern="images/*/index.html">
