@@ -903,10 +903,10 @@
     </xsl:variable>
 
     <!-- Pagination HTML -->
-    <div class="pagination"><xsl:copy-of select="$prev-link"></xsl:copy-of> | Go to page <form class="jumpForm">
+    <div class="pagination"><xsl:copy-of select="$prev-link"></xsl:copy-of> | <!-- Commented this out because it is broken -kmd --><!--Go to page <form class="jumpForm">
         <input type="text" name="paginationJump" value="{format-number($start_pagination div $rows_pagination + 1, '0')}" class="paginationJump"></input>
         <input type="submit" value="Go" class="paginationJumpBtn submit"></input>
-      </form> of <xsl:value-of select="ceiling($numFound div $rows_pagination)"></xsl:value-of> | <xsl:copy-of select="$next-link"></xsl:copy-of>
+      </form> of <xsl:value-of select="ceiling($numFound div $rows_pagination)"></xsl:value-of> |--> <xsl:copy-of select="$next-link"></xsl:copy-of>
     </div>
     <div class="paginationline">&#160;</div>
     <!-- /end Pagination HTML -->

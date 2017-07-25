@@ -52,8 +52,8 @@
 
         <title>William F. Cody Archive: Documenting the life and times of Buffalo Bill</title>
         
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"/>
           
 
         <!-- JQuery -->
