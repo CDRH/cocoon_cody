@@ -305,7 +305,7 @@
   </xsl:template>
 
   <xsl:template match="unclear">
-    <xsl:text> [...] </xsl:text>
+    <xsl:text> [</xsl:text><xsl:apply-templates/><xsl:text>?] </xsl:text>
   </xsl:template>
 
   <xsl:template

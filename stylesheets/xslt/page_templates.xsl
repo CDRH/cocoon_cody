@@ -3,9 +3,11 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xpath-default-namespace="http://www.tei-c.org/ns/1.0" 
-  xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://purl.org/dc/elements/1.1/" 
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:vra="http://www.vraweb.org/vracore4.htm"
   exclude-result-prefixes="dc rdf" 
   version="2.0">
 
@@ -82,7 +84,7 @@
             <xsl:value-of select="$start"></xsl:value-of>
           </xsl:with-param>
           <xsl:with-param name="rowend">12</xsl:with-param>
-          <xsl:with-param name="searchfields">id,titleMain,category,subCategory,itemCategory,date,imageID</xsl:with-param>
+          <xsl:with-param name="searchfields">id,title,category,subCategory,itemCategory_s,date,dateDisplay,dateSort_s,image_id</xsl:with-param>
           <xsl:with-param name="facet">false</xsl:with-param>
           <xsl:with-param name="facetfield"><!--{!ex=dt}subtype--></xsl:with-param>
           <xsl:with-param name="other">
@@ -93,9 +95,9 @@
             <xsl:text>&quot;</xsl:text>
           </xsl:with-param>
           <xsl:with-param name="q">*:*</xsl:with-param>
-          <xsl:with-param name="sort">dateSort</xsl:with-param>
+          <xsl:with-param name="sort">dateSort_s</xsl:with-param>
           <!-- assumed +asc, will need to add another variable if we want +desc -->
-          <xsl:with-param name="sortSecondary">titleMain</xsl:with-param>
+          <xsl:with-param name="sortSecondary">title</xsl:with-param>
         </xsl:call-template>
       </xsl:variable>
 
@@ -163,11 +165,16 @@
                 <xsl:attribute name="src">
                   <xsl:value-of select="$fileroot"></xsl:value-of>
                   <xsl:text>figures/250/</xsl:text>
-                  <xsl:value-of select="str[@name = 'id']"></xsl:value-of>
+                  
+                  <xsl:value-of select="str[@name = 'image_id']"/>
+                  
                   <xsl:text>.jpg</xsl:text>
                 </xsl:attribute>
+                
               </img>
             </a>
+            <!--[[<xsl:value-of select="str[@name = 'image_id']"/>]]-->
+           
 
             <a>
               <xsl:attribute name="href">
@@ -186,8 +193,8 @@
                 <xsl:value-of select="str[@name = 'id']"></xsl:value-of>
               </xsl:attribute>
               <h3>
-                <xsl:value-of select="str[@name = 'titleMain']"></xsl:value-of>
-                <xsl:if test="str[@name = 'date'] != ''"> - <xsl:value-of select="str[@name = 'date']"></xsl:value-of></xsl:if>
+                <xsl:value-of select="str[@name = 'title']"></xsl:value-of>
+                <xsl:if test="str[@name = 'dateDisplay'] != ''"> - <xsl:value-of select="str[@name = 'dateDisplay']"></xsl:value-of></xsl:if>
               </h3>
             </a>
           </div>
@@ -223,51 +230,88 @@
         ===================================================================================== -->
     <xsl:if test="$pagetype = 'imagesView'">
 
-      <xsl:for-each select="/" xpath-default-namespace="">
-        <xsl:for-each select="//rdf:Description[dc:identifier = $imageno]">
-          <h2>Image: <xsl:value-of select="dc:title"></xsl:value-of></h2>
+      <xsl:for-each select="/" xpath-default-namespace="http://www.vraweb.org/vracore4.htm">
+        
+          <h2>Image: <xsl:value-of select="/vra/work[1]/titleSet/title"></xsl:value-of></h2>
+        <xsl:variable name="image_id" select="/vra/work[1]/@id"/>
 
-          <!-- Not currently live -->
-          <!-- <div class="pagination">&#160;</div> -->
-
+          <div class="image_view">
           <img>
             <xsl:attribute name="src">
               <xsl:value-of select="$fileroot"></xsl:value-of>
               <xsl:text>figures/800/</xsl:text>
-              <xsl:value-of select="$imageno"></xsl:value-of>
+       
+              <xsl:value-of select="$image_id"/>
+              
+              
               <xsl:text>.jpg</xsl:text>
             </xsl:attribute>
           </img>
+          </div>
+        
+        <xsl:if test="/vra/work/descriptionSet/normalize-space(description)[. != '']">
+          <p><xsl:apply-templates select="/vra/work/descriptionSet/description"/>
+          </p>
+        </xsl:if>
+        
           <div class="bibliography">
-            <xsl:if test="dc:title[. != '']">
-              <p> Title: <xsl:value-of select="dc:title"></xsl:value-of>
+            <xsl:if test="/vra/work[1]/titleSet[1]/title[1][. != '']">
+              <p> Title: <xsl:value-of select="/vra/work[1]/titleSet/title"></xsl:value-of>
               </p>
             </xsl:if>
+            
+            
+            <!-- I don't love the way I am doing this but it works so leaving for now -->
+            <xsl:variable name="creator_check">
+                <xsl:for-each select="//work/agentSet/agent">
+                  <xsl:choose>
+                    <xsl:when test="role='publisher'"></xsl:when>
+                    <xsl:when test="role='contributor'"></xsl:when>
+                    <xsl:when test="role!=''">creator</xsl:when>
+                    <xsl:when test="role='' and name != ''">creator</xsl:when>
+                  </xsl:choose>
+                </xsl:for-each>
+            </xsl:variable>
+            
+           <!-- Creator -->
+              <xsl:if test="contains($creator_check,'creator')">
+              
+                <p><xsl:text>Creator: </xsl:text>
+                  
+                  <xsl:for-each select="/vra/work/agentSet/agent">
+                    <xsl:if test="role != 'publisher' and role != 'contributor' and normalize-space(.) != ''">
+                      <!-- <p>Creator:--> <span class="subjectLink">
+                        <a>
+                          <xsl:attribute name="href">
+                            <xsl:value-of select="$siteroot"></xsl:value-of>
+                            <xsl:text>search/result.html?q=creator:"</xsl:text>
+                            <xsl:value-of select="encode-for-uri(name)"></xsl:value-of>
+                            <xsl:text>"</xsl:text>
+                          </xsl:attribute>
+                          <xsl:value-of select="name"></xsl:value-of>
+                        </a>
+                      </span><!--</p>-->
+                    </xsl:if>
+                  </xsl:for-each>
+                </p>
+                
+              </xsl:if>
+          
+            
+            <!-- Creator -->
+        
+            
+            
 
-            <xsl:if test="dc:creator[. != '']">
-              <p> Creator: <span class="subjectLink">
-                  <a>
-                    <xsl:attribute name="href">
-                      <xsl:value-of select="$siteroot"></xsl:value-of>
-                      <xsl:text>search/people.html?q=author:"</xsl:text>
-                      <xsl:value-of select="encode-for-uri(dc:creator)"></xsl:value-of>
-                      <xsl:text>"</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="dc:creator"></xsl:value-of>
-                  </a>
-                </span>
-              </p>
-            </xsl:if>
-
-            <xsl:if test="dc:subject[. != '']">
+            <xsl:if test="/vra/work[1]/subjectSet/subject[1]/term[1][. != '']">
               <p>
                 <xsl:text>Keyword</xsl:text>
-                <xsl:if test="count(dc:subject) &gt;= 2">
+                <xsl:if test="count(/vra/work[1]/subjectSet/subject) &gt;= 2">
                   <xsl:text>s</xsl:text>
                 </xsl:if>
                 <xsl:text>: </xsl:text>
 
-                <xsl:for-each select="dc:subject">
+                <xsl:for-each select="/vra/work/subjectSet/subject/term">
                   <xsl:if test=". != ''">
                     <span class="subjectLink">
                       <a>
@@ -284,50 +328,50 @@
                 </xsl:for-each>
               </p>
             </xsl:if>
-            <xsl:if test="dc:description[. != '']">
-              <p> Description: <xsl:value-of select="dc:description"></xsl:value-of>
-              </p>
-            </xsl:if>
-            <xsl:if test="dc:publisher[. != '']">
-              <p> Publisher: <xsl:value-of select="dc:publisher"></xsl:value-of>
-              </p>
-            </xsl:if>
+            
+            
 
-            <xsl:if test="dc:contributor[. != '']">
-              <p> Contributor: <xsl:value-of select="dc:contributor"></xsl:value-of>
+            
+            <xsl:for-each select="/vra/work/agentSet/agent">
+              <xsl:if test="role = 'publisher'">
+                <p>Publisher: <xsl:value-of select="name"/></p>
+              </xsl:if>
+            </xsl:for-each>
+   
+            
+            <xsl:for-each select="/vra/work/agentSet/agent">
+              <xsl:if test="role = 'contributor'">
+                <p>Contributor: <xsl:value-of select="name"/></p>
+              </xsl:if>
+            </xsl:for-each>
+            
+            <xsl:if test="/vra/work[1]/dateSet[1]/normalize-space(display[1])[. != '']">
+              <p> Date: <xsl:value-of select="/vra/work/dateSet/display"></xsl:value-of>
               </p>
             </xsl:if>
-            <xsl:if test="dc:date[. != '']">
-              <p> Date: <xsl:value-of select="dc:date"></xsl:value-of>
+            <xsl:if test="/vra/work/materialSet/normalize-space(display[1])[. != '']">
+              <p> Type: <xsl:value-of select="/vra/work[1]/materialSet/display"/>
               </p>
             </xsl:if>
-            <xsl:if test="dc:type[1][. != '']">
-              <p> Type: <xsl:value-of select="dc:type[1]"></xsl:value-of>
+            <xsl:if test="/vra/work/measurementsSet/normalize-space(display[1])[. != '']">
+              <p> Format: <xsl:value-of select="/vra/work/measurementsSet/display"/>
               </p>
             </xsl:if>
-            <xsl:if test="dc:format[1][. != '']">
-              <p> Format: <xsl:value-of select="dc:format[1]"></xsl:value-of>
+            <p> ID: <xsl:value-of select="/vra/work/@id"/>
               </p>
-            </xsl:if>
-            <xsl:if test="dc:identifier[1][. != '']">
-              <p> ID: <xsl:value-of select="dc:identifier[1]"></xsl:value-of>
-              </p>
-            </xsl:if>
-            <!-- old rule was dc:relation[1][.!=''] but some things do not start with multimedia. Should ask Laura about this -->
-            <xsl:if test="dc:relation[1][starts-with(., 'multimedia')]">
+           
+            <xsl:if test="/vra/work[1]/relationSet/display[. != '']">
               <p>
-                <xsl:text>Commentary: Audio commentary available. (</xsl:text>
+                <xsl:text>Commentary: </xsl:text>
                 <a>
                   <xsl:attribute name="href">
                     <xsl:value-of select="$siteroot"></xsl:value-of>
-                    <xsl:value-of select="dc:relation[1][starts-with(., 'multimedia')]"></xsl:value-of>
+                    <xsl:value-of select="/vra/work/relationSet/relation/@href"></xsl:value-of>
                     <xsl:text>.html</xsl:text>
                   </xsl:attribute>
-                  <xsl:attribute name="target">_blank</xsl:attribute>
-                  <!--<xsl:value-of select="substring-after(dc:relation[1],'/')"/>-->
-                  <xsl:text>Open commentary in new window</xsl:text>
+                  <!--<xsl:attribute name="target">_blank</xsl:attribute>-->
+                  <xsl:value-of select="/vra/work/relationSet/display"/>
                 </a>
-                <xsl:text>)</xsl:text>
               </p>
 
               <!-- a way to include the audio inline. May need to be disabled if it is too server intensive -->
@@ -336,29 +380,38 @@
                         </xsl:for-each></p>-->
 
             </xsl:if>
+            
+            <!--<sourceSet>
+              <display>multimedia/wfc.aud.69.238.2</display>
+              <source>
+                <name type="electronic" href="http://americanhistory.si.edu">multimedia/wfc.aud.69.238.2</name>
+              </source>
+            </sourceSet>-->
 
-            <xsl:if test="dc:source[. != '']">
+            <xsl:if test="/vra/work[1]/sourceSet[1]/display[1][. != '']">
               <p> Source: <xsl:choose>
-                  <xsl:when test="dc:rights">
+                <xsl:when test="/vra/work[1]/sourceSet/source/name/@href and /vra/work[1]/sourceSet/source/name/@href != ''">
                     <a>
                       <xsl:attribute name="href">
-                        <xsl:value-of select="dc:rights"></xsl:value-of>
+                        <xsl:value-of select="/vra/work[1]/sourceSet/source/name/@href"></xsl:value-of>
                       </xsl:attribute>
-                      <xsl:value-of select="dc:source"></xsl:value-of>
+                      <xsl:value-of select="/vra/work[1]/sourceSet/display"></xsl:value-of>
                     </a>
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="dc:source"></xsl:value-of>
+                    <xsl:value-of select="/vra/work[1]/sourceSet/display"></xsl:value-of>
                   </xsl:otherwise>
                 </xsl:choose>
               </p>
+            </xsl:if>
+            
+            <xsl:if test="/vra/work[1]/rightsSet/rights/rightsHolder[. != '']">
+              <p>Rights: <xsl:value-of select="/vra/work[1]/rightsSet/rights/rightsHolder"/></p>
             </xsl:if>
 
           </div>
 
 
-
-        </xsl:for-each>
       </xsl:for-each>
 
     </xsl:if>
@@ -509,7 +562,7 @@
           <xsl:with-param name="rowend">
             <xsl:value-of select="$rows"></xsl:value-of>
           </xsl:with-param>
-          <xsl:with-param name="searchfields">id,titleMain,category,subCategory,itemCategory,date,imageID,dateSort</xsl:with-param>
+          <xsl:with-param name="searchfields">id,title,category,subCategory,itemCategory_s,date,dateDisplay,image_id,dateSort_s</xsl:with-param>
           <xsl:with-param name="facet">false</xsl:with-param>
           <xsl:with-param name="facetfield"><!--{!ex=dt}subtype--></xsl:with-param>
           <xsl:with-param name="other">
@@ -528,12 +581,12 @@
           <xsl:with-param name="sort">
             <xsl:choose>
               <xsl:when test="$sort = 'date' or $pagetype = 'category'">
-                <xsl:text>dateSort</xsl:text>
+                <xsl:text>dateSort_s</xsl:text>
               </xsl:when>
               <xsl:when test="$sort = 'unset' or $sort = 'relevance'"></xsl:when>
               <!-- Leave blank for relevance -->
               <xsl:when test="$sort = 'title'">
-                <xsl:text>titleMain</xsl:text>
+                <xsl:text>title</xsl:text>
               </xsl:when>
               <xsl:otherwise></xsl:otherwise>
             </xsl:choose>
@@ -550,7 +603,7 @@
             </xsl:choose>
           </xsl:with-param>
           <xsl:with-param name="sortSecondary">
-            <xsl:text>titleMain</xsl:text>
+            <xsl:text>title</xsl:text>
           </xsl:with-param>
         </xsl:call-template>
       </xsl:variable>
@@ -611,7 +664,7 @@
               </xsl:choose> | <xsl:choose>
                 <xsl:when test="$sort = 'date'">Date</xsl:when>
                 <xsl:otherwise>
-                  <a href="{$siteroot}search/result.html?q={$q}&amp;sort=date">Date</a>
+                  <a href="{$siteroot}search/result.html?q={$q}&amp;sort=dateSort_s">Date</a>
                 </xsl:otherwise>
               </xsl:choose> | <xsl:choose>
                 <xsl:when test="$sort = 'title'">Title</xsl:when>
@@ -654,11 +707,11 @@
 
         <xsl:for-each select="//doc">
           <xsl:variable name="id" select="str[@name = 'id']"></xsl:variable>
-          <xsl:variable name="titleMain" select="str[@name = 'titleMain']"></xsl:variable>
-          <xsl:variable name="date" select="str[@name = 'date']"></xsl:variable>
+          <xsl:variable name="titleMain" select="str[@name = 'title']"></xsl:variable>
+          <xsl:variable name="date" select="str[@name = 'dateDisplay']"></xsl:variable>
           <xsl:variable name="category" select="str[@name = 'category']"></xsl:variable>
           <xsl:variable name="subCategory" select="str[@name = 'subCategory']"></xsl:variable>
-          <xsl:variable name="imageID" select="str[@name = 'imageID']"></xsl:variable>
+          <xsl:variable name="imageID" select="str[@name = 'image_id']"></xsl:variable>
 
           <xsl:variable name="resultURL">
             <xsl:choose>
@@ -850,10 +903,10 @@
     </xsl:variable>
 
     <!-- Pagination HTML -->
-    <div class="pagination"><xsl:copy-of select="$prev-link"></xsl:copy-of> | Go to page <form class="jumpForm">
+    <div class="pagination"><xsl:copy-of select="$prev-link"></xsl:copy-of> | <!-- Commented this out because it is broken -kmd --><!--Go to page <form class="jumpForm">
         <input type="text" name="paginationJump" value="{format-number($start_pagination div $rows_pagination + 1, '0')}" class="paginationJump"></input>
         <input type="submit" value="Go" class="paginationJumpBtn submit"></input>
-      </form> of <xsl:value-of select="ceiling($numFound div $rows_pagination)"></xsl:value-of> | <xsl:copy-of select="$next-link"></xsl:copy-of>
+      </form> of <xsl:value-of select="ceiling($numFound div $rows_pagination)"></xsl:value-of> |--> <xsl:copy-of select="$next-link"></xsl:copy-of>
     </div>
     <div class="paginationline">&#160;</div>
     <!-- /end Pagination HTML -->
@@ -1021,7 +1074,7 @@
                 <a>
                   <xsl:attribute name="href">
                     <xsl:value-of select="$siteroot"></xsl:value-of>
-                    <xsl:text>search/people.html?q=author:"</xsl:text>
+                    <xsl:text>search/people.html?q=creator:"</xsl:text>
                     <!-- This code is to choose the @n value for the name if there is one -->
                     <xsl:choose>
                       <xsl:when test="@n and @n != ''">

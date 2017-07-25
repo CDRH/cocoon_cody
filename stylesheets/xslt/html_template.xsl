@@ -52,8 +52,8 @@
 
         <title>William F. Cody Archive: Documenting the life and times of Buffalo Bill</title>
         
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"/>
           
 
         <!-- JQuery -->
@@ -131,7 +131,7 @@
                 <li class="three">
                   <a href="{$siteroot}scholarship/">
                     <strong>Scholarship</strong>
-                    <span>Historiography, Research</span>
+                    <span>Digital Research, Digital Scholarship, Monographs, Editions, Presentations, and Historiography</span>
                   </a>
                 </li>
 

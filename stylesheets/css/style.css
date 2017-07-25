@@ -682,7 +682,7 @@ height: 140px;
 /* metadata  */
 
 .bibliography {
-	margin: 20px 0 20px 0;
+	margin: 0px 0 20px 0;
 	padding: 5px 20px 0px 20px;
 	background-color: #e4e5d1;
 	border-right: 1px solid #d5d6c3;
@@ -1087,13 +1087,21 @@ div.imageResult {
 }
 
 .imagesGallery h3 {
-	font-size: 1.4em;
+	line-height: 1em;
+	font-size: 1.2em;
+	text-decoration:none;
+	font-weight:600;
 }
+
 
 /* Images Individual pages */
 
 .imagesView h2 {
 	padding-bottom: 20px;
+}
+
+.image_view {
+  margin-bottom:10px;
 }
 
 
