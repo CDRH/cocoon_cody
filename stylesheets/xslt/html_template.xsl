@@ -326,7 +326,7 @@
 
 
 
-        <xsl:if test="unparsed-text-available(concat($siteroot,'js/',$pagetype,'.js'))">
+        <xsl:if test="$siteroot,'js/',$pagetype,'.js'">
 
           <script type="text/javascript" src="{concat($siteroot,'js/',$pagetype,'.js')}"><xsl:text>&#160;</xsl:text></script>
         </xsl:if>

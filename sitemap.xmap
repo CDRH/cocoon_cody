@@ -340,13 +340,18 @@
             </map:match>
 
             <!-- Converted this one to calling the solr search results from inside the stylesheet -KD -->
-            <map:match pattern="js/solr/*.json">
+            <!--<map:match pattern="js/solr/*.json">
                 <map:generate src="data_cody/tei/wfc.person.xml" />
                 <map:transform src="stylesheets/xslt/solr2json-facets.xsl" >
                 <map:parameter name="category" value="{1}"/>
                 </map:transform>
                 <map:serialize type="textutf8" />
-            </map:match>
+            </map:match>-->
+          
+          <map:match pattern="js/solr/*.json">
+            <map:read src="js/solr/{1}.json"/>
+            <map:serialize type="textutf8" />
+          </map:match>
             
             <!-- Not sure where the following two are used, commenting out for now. -KD -->
             <!--<map:match pattern="js/solr/category/*.json">
