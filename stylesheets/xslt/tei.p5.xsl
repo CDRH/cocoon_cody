@@ -51,32 +51,29 @@
       <h4>
       <xsl:choose>
         <xsl:when test="@xml:lang != 'en'">
-          <xsl:text>Original </xsl:text> 
           <xsl:call-template name="language_choice">
             <xsl:with-param name="language"><xsl:value-of select="@xml:lang"/></xsl:with-param>
           </xsl:call-template>
           <xsl:text> | </xsl:text> 
-            <a>
-              <xsl:attribute name="href">
-                <xsl:text>#en</xsl:text>
-              </xsl:attribute>
-              <xsl:text>English Translation Available</xsl:text>
-            </a>
+          <a>
+            <xsl:attribute name="href">
+              <xsl:text>#en</xsl:text>
+            </xsl:attribute>
+            <xsl:text>English</xsl:text>
+          </a>
         </xsl:when>
         <xsl:when test="not(preceding-sibling::div1)">
-          <xsl:text>English Translation</xsl:text>
+          <xsl:text>English</xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:text>English Translation | </xsl:text>
+          <xsl:text>English | </xsl:text>
           <a>
             <xsl:attribute name="href">
               <xsl:text>#</xsl:text><xsl:value-of select="preceding-sibling::div1[last()]/@xml:lang"/>
             </xsl:attribute>
-            <xsl:text>Original </xsl:text>
             <xsl:call-template name="language_choice">
               <xsl:with-param name="language"><xsl:value-of select="preceding-sibling::div1[last()]/@xml:lang"/></xsl:with-param>
             </xsl:call-template>
- 
           </a>
         </xsl:otherwise>
       </xsl:choose>
