@@ -78,17 +78,29 @@
 
         <h2>Community</h2>
         
-       <!-- <a href="../events/" class="subCategory">
+       <h3>Social Media</h3>
+        
+        <dl>
+            <dt>Cody Archive Changelog</dt>
+            <dd><a href="https://codyarchivechangelog.wordpress.com/">codyarchivechangelog.wordpress.com</a></dd>
+            <dt>Twitter</dt>
+            <dd><a href="https://twitter.com/codyarchive/">twitter.com/codyarchive</a></dd>
+            <dt>Facebook</dt>
+            <dd><a href="https://www.facebook.com/codyarchive/">facebook.com/codyarchive</a></dd>
+        </dl>
+        
+        
+        <!-- <a href="../events/" class="subCategory">
             <div class="image"><img src="../images/icon-events.jpg"/></div>
             <h3>Events</h3>
             <p>A listing of past and forthcoming events related to Cody. Please submit events to the Archive Project Manager.</p>
         </a>-->
         
-        <a href="../links/" class="subCategory">
+        <!--<a href="../links/" class="subCategory">
             <div class="image"><img src="../images/icon-links.jpg"/></div>
             <h3>Links</h3>
             <p>Links to valuable web resources related to the life and legacy of William F. "Buffalo Bill" Cody. </p>
-        </a>
+        </a>-->
         
         <!--<a href="../sharing/" class="subCategory">
             <div class="image"><img src="../images/icon-sharing.jpg"/></div>
@@ -96,7 +108,21 @@
             <p>Various social media tools to inform, discuss, and share information, and materials. Do you have a Cody-related family story, artifact, or document? Tell the online Cody community!</p>
         </a>-->
         
+        <h3>Links</h3>
         
+        
+        <ul>
+            <li><a href="http://centerofthewest.org/">Buffalo Bill Center of the West</a></li>
+            <li><a href="http://www.buffalobill.org/">Buffalo Bill Museum and Grave</a></li>
+            <li><a href="http://library.centerofthewest.org/cdm/landingpage/collection/BBOA">Buffalo Bill Online Archive</a></li>
+            <li><a href="http://outdoornebraska.gov/buffalobillranch/">Buffalo Bill Ranch State Historical Park</a></li>
+            <li><a href="http://cdrh.unl.edu">Center for Digital Research in the Humanities, UNL</a></li>
+            <li><a href="http://cody-family.org/">Cody Family Association</a></li>
+            <li><a href="http://centerofthewest.org/research/mccracken-research-library/">McCracken Research Library</a></li>
+            <li><a href="http://www.si.edu/Consortia">The Smithsonian Consortia</a></li>
+            <li><a href="http://nebraskapress.unl.edu">University of Nebraska Press</a></li>
+            
+        </ul>
 
 </div1>
 </body>

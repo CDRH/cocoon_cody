@@ -78,11 +78,7 @@
 
     <h2>Texts</h2>
 
-<a href="../category/result.html?q=subCategory%3A%22Correspondence%22" class="subCategory">
-    <div class="image"><img src="../images/icon-correspondence.jpg"/></div>
-    <h3>Correspondence</h3>
-    <p>Letters written to and from William F. "Buffalo Bill" Cody and his numerous business and personal correspondents throughout his adult life.</p>
-</a>
+
  
     
         <a href="../category/result.html?q=subCategory%3A%22Books%22" class="subCategory">
@@ -91,12 +87,35 @@
     <p>Full-text digital editions of key published works featuring William F. "Buffalo Bill" Cody. Titles include autobiographies, biographies, western Americana, and children's literature.</p>
 </a>
         
+        <a href="../category/result.html?q=subCategory%3A%22Correspondence%22" class="subCategory">
+            <div class="image"><img src="../images/icon-correspondence.jpg"/></div>
+            <h3>Correspondence</h3>
+            <p>Letters written to and from William F. "Buffalo Bill" Cody and his numerous business and personal correspondents throughout his adult life.</p>
+        </a>
+        
+        <a href="../category/result.html?q=subCategory%3A%22Government+Documents%22" class="subCategory">
+            <div class="image"><img src="../images/icon-government_documents.jpg"/></div>
+            <h3>Government Documents</h3>
+            <p>Official documents from all levels of government concerning William F. Cody and the people and places surrounding him.</p>
+        </a>
+        
+        <a href="../category/result.html?q=subCategory%3A%22Life+Writing%22" class="subCategory">
+            <div class="image"><img src="../images/icon-life_writing.jpg"/></div>
+            <h3>Life Writing</h3>
+            <p>Biographies, autobiographies, and personal narratives written by people associated with William F. Cody, generally unpublished manuscripts or typescripts.</p>
+        </a>
         
         <a href="../category/result.html?q=subCategory%3A%22Newspapers%22" class="subCategory">
     <div class="image"><img src="../images/icon-newspapers.jpg"/></div>
     <h3>Newspapers</h3>
     <p>William F. Cody himself, <em>The Buffalo Bill Combination and Buffalo Bill's Wild West</em> appeared in numerous newspaper articles from 1870 to his death in 1917.</p>
 </a>
+        
+        <a href="../category/result.html?q=subCategory%3A%22Pamphlets%22" class="subCategory">
+            <div class="image"><img src="../images/icon-pamphlets.jpg"/></div>
+            <h3>Pamphlets</h3>
+            <p>Various pamphlets and brochures concerning William F. Cody or on topics related to Cody.</p>
+        </a>
         
         <a href="../category/result.html?q=subCategory%3A%22Periodicals%22" class="subCategory">
     <div class="image"><img src="../images/icon-periodicals.jpg"/></div>
