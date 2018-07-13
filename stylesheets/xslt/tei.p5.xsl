@@ -39,6 +39,10 @@
     <xsl:choose>
       <xsl:when test="$language = 'de'">German</xsl:when>
       <xsl:when test="$language = 'en'">English</xsl:when>
+      <xsl:when test="$language = 'fr'">French</xsl:when>
+      <xsl:when test="$language = 'it'">Italian</xsl:when>
+      <xsl:when test="$language = 'es'">Spanish</xsl:when>
+      <xsl:when test="$language = 'el'">Greek</xsl:when>
       <xsl:otherwise>Unknown</xsl:otherwise>
     </xsl:choose>
   </xsl:template>
