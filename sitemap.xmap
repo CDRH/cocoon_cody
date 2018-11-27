@@ -55,7 +55,7 @@
             
             <!-- Personography -->
             <map:match pattern="life/wfc.person.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" />
+                <map:generate src="data_cody/source/tei/wfc.person.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="life"/>
                     <map:parameter name="subCategory" value="Personography"/>
@@ -66,7 +66,7 @@
             <!-- Encyclopedia -->
             
             <map:match pattern="life/wfc.encyc.html">
-                <map:generate src="data_cody/tei/wfc.encyc.xml" />
+                <map:generate src="data_cody/source/tei/wfc.encyc.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="life"/>
                     <map:parameter name="subCategory" value="Encyclopedia"/>
@@ -76,7 +76,7 @@
             
             <!-- Popup pages (testing) -->
             <!--<map:match pattern="popup/*/**/index.html">
-                <map:generate src="data_cody/tei/wfc.{1}.xml" />
+                <map:generate src="data_cody/source/tei/wfc.{1}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="popup"/>
                     <map:parameter name="subCategory" value="{1}/{2}"/>
@@ -86,7 +86,7 @@
             
             <!-- TEI XML File display as HTML -->
             <map:match pattern="*/wfc.*.html">
-                <map:generate src="data_cody/tei/wfc.{2}.xml" />
+                <map:generate src="data_cody/source/tei/wfc.{2}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="{1}"/>
                     <map:parameter name="pageid" value="{2}"/>
@@ -96,7 +96,7 @@
             
             <!-- XML File display as XML -->
             <map:match pattern="*/wfc.*.xml">
-                <map:read src="data_cody/tei/wfc.{2}.xml"/>
+                <map:read src="data_cody/source/tei/wfc.{2}.xml"/>
             </map:match>
             
             <!-- ??? -->
@@ -107,7 +107,7 @@
             <!-- Search results -->
             
             <map:match pattern="search/result.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="searchresults" />
                     <map:parameter name="use-request-parameters" value="true"/>
@@ -118,7 +118,7 @@
             <!-- Category results (separated out to enable date sort)
             Changed to pull search results from XSL uncoded SOLR url -KD -->
             <map:match pattern="category/result.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="category" />
                     <map:parameter name="use-request-parameters" value="true"/>
@@ -152,7 +152,7 @@
             
             <!-- People search results (for personography) -->
             <map:match pattern="search/people.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="searchresults" />
                     <map:parameter name="searchtype" value="people" />
@@ -163,7 +163,7 @@
 
             <!-- Places search results -->
             <map:match pattern="search/places.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="searchresults" />
                     <map:parameter name="searchtype" value="places" />
@@ -175,7 +175,7 @@
             <!-- Encyclopedia search results -->
             <!-- Same as the others for now, including in case we want to generalize later -->
             <map:match pattern="search/encyc.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="searchresults" />
                     <map:parameter name="searchtype" value="encyc" />
@@ -186,7 +186,7 @@
 
             <!-- Advanced search results -->
             <map:match pattern="search/advanced.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="searchresults" />
                     <map:parameter name="searchtype" value="advanced" />
@@ -218,7 +218,7 @@
 
             <!-- View Images -->
             <map:match pattern="images/view/*/*">
-                <map:generate src="data_cody/vra/{2}.xml" />
+                <map:generate src="data_cody/source/vra/{2}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                   <map:parameter name="use-request-parameters" value="true" />
                   <map:parameter name="pagetype" value="imagesView"/>
@@ -229,7 +229,7 @@
             
             <!-- View memorabilia as images (e.g. postcards) -->
             <map:match pattern="memorabilia/view/*/*">
-            <map:generate src="data_cody/vra/{2}.xml" />
+            <map:generate src="data_cody/source/vra/{2}.xml" />
             <map:transform src="stylesheets/xslt/tei.p5.xsl">
               <map:parameter name="use-request-parameters" value="true" />
               <map:parameter name="pagetype" value="imagesView"/>
@@ -240,7 +240,7 @@
 
             <!-- Image Search results -->
             <map:match pattern="images/*/index.html">
-              <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+              <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="subCategory" value="{1}"/>
                     <map:parameter name="pagetype" value="imagesGallery" />
@@ -253,7 +253,7 @@
             
             <!-- Memorabilia as Image Search results (e.g. postcards) -->
             <map:match pattern="memorabilia/*/index.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="subCategory" value="{1}"/>
                     <map:parameter name="pagetype" value="imagesGallery" />
@@ -331,7 +331,7 @@
             </map:match>
             
             <map:match pattern="search/result.html">
-                <map:generate src="data_cody/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
+                <map:generate src="data_cody/source/tei/wfc.person.xml" /><!-- Any file will do, all info coming from stylesheet -->
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="searchresults" />
                     <map:parameter name="use-request-parameters" value="true"/>
@@ -341,7 +341,7 @@
 
             <!-- Converted this one to calling the solr search results from inside the stylesheet -KD -->
             <map:match pattern="js/solr/*.json">
-                <map:generate src="data_cody/tei/wfc.person.xml" />
+                <map:generate src="data_cody/source/tei/wfc.person.xml" />
                 <map:transform src="stylesheets/xslt/solr2json-facets.xsl" >
                 <map:parameter name="category" value="{1}"/>
                 </map:transform>
@@ -449,7 +449,7 @@
             
             <!-- XML File display as HTML (temporary for non wfc files) -->
             <map:match pattern="*/*.html">
-                <map:generate src="data_cody/tei/{2}.xml" />
+                <map:generate src="data_cody/source/tei/{2}.xml" />
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="{1}"/>
                     <map:parameter name="pageid" value="{2}"/>
