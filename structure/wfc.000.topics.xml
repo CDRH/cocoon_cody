@@ -82,25 +82,25 @@
                 <h2>Topics</h2>
 
                 <a href="../category/result.html?q=topic:%22Buffalo%20Bill%20Himself%22" class="subCategory">
-                    <div class="image"><img src="../images/icon-european-tour.jpg"/></div>
+                    <div class="image"><img src="../images/icon-empire.jpg"/></div>
                     <h3>Buffalo Bill Himself</h3>
                     <p>TODO</p>
                 </a>
 
                 <a href="../category/result.html?q=topic:%22Buffalo%20Bill's%20Wyoming%22" class="subCategory">
-                    <div class="image"><img src="../images/icon-european-tour.jpg"/></div>
+                    <div class="image"><img src="../images/icon-empire.jpg"/></div>
                     <h3>Buffalo Bill's Wyoming</h3>
                     <p>TODO</p>
                 </a>
 
                 <a href="../category/result.html?q=topic:%22Lakota%20Performers%22" class="subCategory">
-                    <div class="image"><img src="../images/icon-european-tour.jpg"/></div>
+                    <div class="image"><img src="../images/icon-show-indians.jpg"/></div>
                     <h3>Lakota Performers</h3>
                     <p>TODO</p>
                 </a>
 
                 <a href="../category/result.html?q=topic:%22Roosevelt's%20Rough%20Riders%22" class="subCategory">
-                    <div class="image"><img src="../images/icon-european-tour.jpg"/></div>
+                    <div class="image"><img src="../images/icon-rough-riders.jpg"/></div>
                     <h3>Roosevelt's Rough Riders</h3>
                     <p>TODO</p>
                 </a>
