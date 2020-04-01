@@ -124,7 +124,7 @@
                 <li class="two">
                   <a href="{$siteroot}topics/">
                     <strong>Topics</strong>
-                    <span>Empire, European Tours, Rough Riders, Show Indians</span>
+                    <span>Buffalo Bill Himself, Lakota Performers, Wild West in Britain, Congress of Rough Riders…</span>
                   </a>
                 </li>
 

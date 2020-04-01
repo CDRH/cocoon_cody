@@ -679,6 +679,17 @@ height: 140px;
 	margin-bottom: 30px;
 }
 
+.flexsurround {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flexsurround .subCategory {
+  height: auto;
+	width: 40%;
+	flex-grow: 1;
+}
+
 /* metadata  */
 
 .bibliography {
