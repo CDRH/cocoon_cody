@@ -855,7 +855,7 @@
               <xsl:value-of select="$baseLinkURL"></xsl:value-of>
               <xsl:if test="$q">
                 <xsl:text>q=</xsl:text>
-                <xsl:value-of select="$q"></xsl:value-of>
+                <xsl:value-of select="replace($q, '&amp;', '%26')"/>
                 <xsl:text>&#38;</xsl:text>
               </xsl:if>
               <xsl:text>start=</xsl:text>
@@ -884,7 +884,7 @@
               <xsl:value-of select="$baseLinkURL"></xsl:value-of>
               <xsl:if test="$q">
                 <xsl:text>q=</xsl:text>
-                <xsl:value-of select="$q"></xsl:value-of>
+                <xsl:value-of select="replace($q, '&amp;', '%26')"/>
                 <xsl:text>&#38;</xsl:text>
               </xsl:if>
               <xsl:text>start=</xsl:text>
