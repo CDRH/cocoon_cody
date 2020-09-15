@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+  <h2>Buffalo Bill on Stage</h2>
+
+    <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%20on%20Stage%22">Go to Results</a>
+
+  <figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pst.00227.jpg" alt="Buffalo Bill"/>
+      <figcaption>Buffalo Bill, Jackson's Printing House, Philadelphia, ca. 1874.</figcaption>
+  </figure>
+  <p>
+
+  What began for Cody as competition for America’s entertainment dollars in dramas written by others, developed into his very personal interpretation of the West. The success of his Combination years is chronicled nationwide in newspaper reports from Maine to California to Alabama. His legacy of education, romance, and history—beginning with quaint melodramas and achieving full expression in his Wild West show—merits worldwide attention.</p>
+  <p>The Buffalo Bill Combination played 141 dates during the inaugural 1872-73 season, performing throughout the Midwest, New England, and Atlantic Coast. The season opened in Chicago with General Phil Sheridan in attendance.  While Ned Buntline's play was ridiculed in the press due to amateurish acting and a poorly written script, Buffalo Bill and fellow performer Texas Jack were celebrated by the theatre critics as the "real attractions, not only as heroes of the play, but as celebrities whose fame long ante-dates their appearance before the footlights" (Chicago Times, Dec. 18, 1872). In fact, Cody told the audience in Baltimore that only a few months ago, he had been out west performing the same daring deeds of Indian warfare that he was recreating on their stage that evening, excusing his lack of acting skill by leaning on his authenticity as a frontier icon. At the end of their first season, Cody and Omohundro decided to launch their own performing troupe. Later that summer, while escorting a hunting party, Cody boasted to an Omaha, Nebraska newspaper, "I'm no d--d scout now; I'm a first-class star" (<em>Omaha Republican</em>, July 17, 1873).</p>
+  <p>Buffalo Bill Cody was forty years old when he retired from the theatrical stage to begin a new career as a Wild West showman. Experience had been a stern teacher as he progressed from never having been on a stage to a confident actor striding out from the wings, not only as thespian but as manager of his own theatrical troupe. Moving into another phase of his show business career, he was eager to apply the lessons learned during the previous fourteen Combination years.</p>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%20on%20Stage%22">Go to Results</a>
+
+</div1>
+</body>
+</text>
+</TEI>

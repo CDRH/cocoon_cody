@@ -296,7 +296,7 @@
                     <map:parameter name="pagetype" value="{1}"/>
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
-            </map:match>
+            </map:match>    
             
             <map:match pattern="*/index.html">
                 <map:generate src="structure/wfc.000.{1}.xml" />
@@ -305,16 +305,38 @@
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
             </map:match>
+          
+
+          <!-- Sub topics -->
+
+          <map:match pattern="topics/*">
+            <map:generate src="structure/wfc.000.topics.{1}.xml" />
+            <map:transform src="stylesheets/xslt/tei.p5.xsl">
+              <map:parameter name="pagetype" value="topics"/>
+            </map:transform>
+            <map:serialize type="xhtmlutf8" />
+          </map:match>
+
+          <map:match pattern="topics/*/index.html">
+
+            <map:generate src="structure/wfc.000.topics.{1}.xml" />
+            <map:transform src="stylesheets/xslt/tei.p5.xsl">
+              <map:parameter name="pagetype" value="topics"/>
+            </map:transform>
+            <map:serialize type="xhtmlutf8" />
+          </map:match>
             
             <!-- Rends -->
+
+            <!-- this does not appear to be working anymore so I am commenting out -->
             
-            <map:match pattern="admin/rends/index.html">
+            <!-- <map:match pattern="admin/rends/index.html">
                 <map:generate src="structure/wfc.000.rends.xml" />
                 <map:transform src="stylesheets/xslt/rends.xsl">
                     <map:parameter name="pagetype" value="rends"/>
                 </map:transform>
                 <map:serialize type="xhtmlutf8" />
-            </map:match>
+            </map:match> -->
             
             <!--<map:match pattern="admin/rends/**">
                     <map:generate

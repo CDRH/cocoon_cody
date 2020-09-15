@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Scholarship</title>
+                <author/>
+                <principal>Johnston, Jeremy</principal>
+                <principal>Christianson, Frank</principal>
+                <principal>Seefeldt, Douglas, 1964-</principal>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2011</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority>William F. Cody Archive</authority>
+                <publisher>University of Nebraska-Lincoln</publisher>
+                <distributor>
+                    <name>Center for Digital Research in the Humanities</name>
+                    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+                </distributor>
+                <pubPlace>Lincoln, Nebraska</pubPlace>
+                <address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+                <idno type="module">bbww.indians.letter.brennentocommissioner.19130728</idno>
+                <idno type="project">wfc.000.scholarship</idno>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt>
+                <note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+            </notesStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <author/>
+                    <title level="m" type="main">Scholarship</title>
+
+                    <extent>1 page</extent>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc> </profileDesc>
+
+    </teiHeader>
+
+    <text>
+        <body>
+
+            <div1 type="html">
+
+  <h2>Buffalo Bill Himself</h2>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%20Himself%22">Go to Results</a>
+
+  <figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pho.p.6.134.jpg" alt="William F. Cody"/>
+      <figcaption>William F. Cody, circa 1876.</figcaption>
+  </figure>
+
+
+  <p>
+  
+  William F. “Buffalo Bill” Cody was born on February 26, 1846, in Iowa to Isaac and Mary Cody.  As a young boy, Cody’s family moved to Kansas and became embroiled in the sectional conflict between Kansas and Missouri over the westward expansion of slavery.  A proslavery advocate stabbed and wounded his father Isaac after he expressed his opposition against slavery.  At this time, the Cody family’s future in Kansas seemed bleak and only worsened after the death of Isaac.  With his father’s death, young William worked for the freighting firm of Rusell, Majors, and Wadell and traversed many of the trails across the Great Plains.  He asserted he also served as a Pony Express rider.  After serving in the Civil War as a member of the 7th Kansas Volunteer Cavalry, Cody married Louisa Frederici and moved back to Kansas to manage a hotel, which failed.  His attempt to found a town also failed when he refused to offer the Kansas Pacific Railroad a portion of the sales of town lots.  He earned his renowned nickname “Buffalo Bill” after resorting to work as a buffalo hunter for the Goddard Brothers to provide bison meat to the railroad crews laying the tracks through Kansas.</p>
+  <p>He later worked as a scout for the US Army, gaining national attention by serving at the Battle of Summit Springs in 1869 and becoming the subject of Ned Buntline’s dime-novel <em>King of the Border Men</em>.  General Philip Sheridan recognized this prominence and often tasked him with serving as a guide for various hunting parties, including the famed bison hunt of Grand Duke Alexis in 1872.  That same year, the army awarded Buffalo Bill the Medal of Honor.  Even after becoming a stage actor, Buffalo Bill continued to serve as a scout.  In 1877 he returned to the plains to join the US military response to the Battle of Little Bighorn. In that campaign he fought at the Battle of Warbonnet Creek, killed and scalped a Cheyenne warrior named Yellow Hair, and declared the scalp to be the “First Scalp for Custer.”  The demands of being a celebrity and traveling with Buffalo Bill’s Wild West took a great toll on his marriage and his family.  He filed for divorce in 1902, but the judge refused to grant the separation.  Cody outlived three of his children, Orra, Kit, and Arta.  Upon his death on January 10, 1917, he was survived by his wife and daughter Irma, who died during the flu epidemic of 1918.  Louisa passed away in 1921. </p> 
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%20Himself%22">Go to Results</a>      
+
+</div1>
+</body>
+</text>
+</TEI>

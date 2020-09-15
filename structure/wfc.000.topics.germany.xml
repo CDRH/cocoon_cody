@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+  <h2>Wild West in Germany</h2>
+  
+    <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wild%20West%20in%20Germany%22">Go to Results</a>
+<figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.bks00012.001.jpg" alt="Book Cover"/>
+      <figcaption>Cover of Buffalo Bill and his Wild West drawings from life by Charles Henckel, Munich 1891.</figcaption>
+  </figure>
+  <p>
+  
+  The Wild West found fertile ground in Germany for its life staging of the Western experience. From the novels of James Fenimore Cooper and German author Karl May to the Indian portraiture of George Catlin, images of the west had a well-established place within the German popular imagination by the final decade of the nineteenth century. For Germans, the Lakota Performers held a particular fascination. They had been exposed to them through traveling ethnographic exhibits, known in Germany as “Volkerschauen,” since the mid-nineteenth century. Press coverage of the German tours suggests that the Show Indians were the primary attraction, while elements popular among American audiences drew less attention. Along with the masses of everyday citizens, among the Wild West’s more elite patrons was Kaiser Wilhelm II. The Wild West was also influenced by its time in Germany. As part of its “Rough Riders of the World” feature, it would eventually include as many as twenty German soldiers in its cast. While the later iteration of the Wild West had many of the same elements, under the management of Bailey Circus, it adopted a new approach to touring with one or two day stays in each location and a much greater number of cities on the itinerary. Of the fourteen European countries the Wild West toured during nearly seven years collectively abroad, the German experience has to be one of its most celebrated and distinctive.</p>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wild%20West%20in%20Germany%22">Go to Results</a>
+
+</div1>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+  <h2>Lakota Performers</h2>
+
+    <a class="btn" href="../../category/result.html?q=topic:%22Lakota%20Performers%22">Go to Results</a>
+  <figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pht00076.jpg" alt="Lakotas Demonstrating Breaking Camp"/>
+      <figcaption>Lakotas demonstrate breaking camp during the Wild West's appearance in Brussels in 1891.</figcaption>
+  </figure>
+  <p>
+
+  In the decade before Buffalo Bill’s Wild West was conceived, William F. Cody had a history of employing Plains Indians, primarily Pawnee, in his traveling stage melodramas of frontier life. His understanding of their centrality carried over to the exhibition as it developed in 1883 and 1884, and he turned to Lakotas at Pine Ridge Reservation to recruit. Lakota Chief Sitting Bull’s participation during the formative stages in 1885 was crucial to the early success of the Wild West. The Show Indians played various roles in the exhibition. They were competitors, on foot and on horseback, in races against other members of the cast. They were cast as antagonists in the historical reenactments, such as the Battle of Little Bighorn, which were a staple of the Wild West playbill. And they were ethnographic subjects, called upon to demonstrate their lifeways and customs on the showground in performed Indian dances and rituals, and outside the arena in their Indian Village, which was open to the public. Buffalo Bill’s Wild West presented them as both a fallen foe of civilization’s progress and a nostalgic reminder of a vanishing past. Motives for participation varied. The wages were relatively high and the Wild West afforded a special dispensation for some to leave the reservation and experience a new kind of freedom. Many were curious to see and learn from their encounters with other regions and cultures. They were a major attraction for audiences everywhere but held a special allure for Europeans, who saw them as the most exotic feature of the American frontier landscape. Personal narratives by Black Elk and Luther Standing Bear offer a window into the Indian experience with the Wild West. The archive contextualizes theirs and others accounts of this chapter in Native American history.</p>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Lakota%20Performers%22">Go to Results</a>
+
+</div1>
+</body>
+</text>
+</TEI>
