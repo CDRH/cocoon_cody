@@ -433,7 +433,7 @@
                 <map:read src="favicon.ico"/>
             </map:match>
             
-           <!-- <map:handle-errors type="404">
+            <map:handle-errors type="404">
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="error"/>
                 </map:transform>
@@ -444,8 +444,8 @@
                 <map:transform src="stylesheets/xslt/tei.p5.xsl">
                     <map:parameter name="pagetype" value="error"/>
                 </map:transform>
-                <map:serialize  type="html" status-code="404"/>
-                </map:handle-errors>-->
+                <map:serialize  type="html" status-code="500"/>
+                </map:handle-errors>
             
             <!-- XML File display as HTML (temporary for non wfc files) -->
             <map:match pattern="*/*.html">
