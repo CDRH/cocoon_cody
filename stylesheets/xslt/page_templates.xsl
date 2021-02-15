@@ -47,7 +47,7 @@
         $pagetype = 'sharing' or
         $pagetype = 'staff' or
         $pagetype = 'topics'">
-      <xsl:apply-templates select="//text"></xsl:apply-templates>
+      <xsl:apply-templates select="//text/body/div1"></xsl:apply-templates>
     </xsl:if>
 
     <!-- =====================================================================================

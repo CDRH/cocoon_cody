@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+  <h2>Buffalo Bill’s Wyoming</h2>
+
+    <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wyoming%22">Go to Results</a>
+
+  <figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pho.p.6.266.jpg" alt="William F. Cody, George W. T. Beck, and Henry J. Fulton"/>
+      <figcaption>William F. Cody sits for studio portrait holding lariat on his knee with George T. Beck on his right and Henry J. Fulton on his left.</figcaption>
+  </figure>
+  <p>
+
+  In 1894, George W. T. Beck learned of the possibility of completing a reclamation project in the Big Horn Basin of Wyoming along the Stinkingwater River, which the state renamed the Shoshone River in 1901. When William F. “Buffalo Bill” Cody learned of the project and its potential to make money, he asked to be a partner in the enterprise. Recognizing Buffalo Bill’s popularity and success with Buffalo Bill’s Wild West, Beck and the other investors selected him as president of the Shoshone Land and Irrigation Company to lure settlers into the arid region. Even with Buffalo Bill’s celebrity status, the investors did not complete the Cody Canal until 1897, and did not realize the significant profits they hoped to secure. Despite these challenges, the small community became the county seat of Park County, Wyoming, and the home of the Buffalo Bill Museum, which grew into the Buffalo Bill Center of the West.</p>
+
+  <p>As work began on the Cody Canal, Buffalo Bill and George Beck invested in various projects in the Big Horn Basin, including mine sites, oil wells, and the town of Cody, Wyoming, founded in 1896. The laying of tracks to Cody by the Burlington Railroad secured the town’s future. Buffalo Bill promoted the town’s proximity to Yellowstone National Park and established a series of hotels and a transportation company to serve tourists visiting the park. The Irma Hotel, completed in 1902 and named for Cody’s youngest daughter, provided the first night’s stay for visitors traveling the Cody-Yellowstone road. Buffalo Bill also promoted the establishment of Shoshone Caverns on top of Cedar Mountain as another tourist destination; however, the National Park Service eventually delisted its national monument status and returned it to the town of Cody. Buffalo Bill’s selection of Cedar Mountain as his final resting spot remains debated amongst historians, yet the town of Cody, Wyoming, and the Buffalo Bill Center of the West continue to promote his memory and the academic study of his legacy.</p>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wyoming%22">Go to Results</a>
+
+</div1>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+
+ <a class="btn" href="../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wild%20West%20in%20Italy%20%26%20Spain%22">Go to Results</a>
+  <figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pho.p.69.822.jpg" alt="Native American chiefs in gondola"/>
+      <figcaption>William F. Cody and four Native American chiefs in gondola in Venice [Venezia] during Wild West tour of 1890.</figcaption>
+  </figure>
+  <p>
+
+  Italy is among the key chapters of the Wild West’s European history. Both in its contemporaneous reception and in the continuing popularity of Buffalo Bill for decades after the last performance there, the Italian tours of 1890 and 1906 hold a unique place in the Buffalo Bill story. It began with a highly celebrated visit to Rome. The original ambition to actually stage the exhibition in the Coliseum proved impractical, but the Wild West nevertheless found massive interest among Roman audiences, including at the highest levels of the Catholic Church. A visit to the Vatican and a special audience with Pope Leo XIII made great promotional fodder for the Wild West marketing department. Another cause of national sensation was a bucking contest between the Wild West’s cowboys and Italian cowboys, known as <em>buterri</em>. A controversial outcome (each side claimed to have won) only added to the notoriety. With extended stays in the larger cities and brief stops in smaller towns, the Wild West covered much of the country, always followed by an Italian press that reported on countless details of the performance and logistics of the show emphasizing its uniquely American character. Alongside the Wild West exhibition, a thriving industry in Buffalo Bill dime novels emerged beginning in 1890 with translated works and expanding in 1906 to Buffalo Bill stories by Italian authors. These works were still popular in the 1930s as Buffalo Bill was transformed into an Italian nationalist hero and appropriated for political purposes by Mussolini’s political machine.</p> 
+
+   <a class="btn" href="../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wild%20West%20in%20Italy%20%26%20Spain%22">Go to Results</a>
+
+</div1>
+</body>
+</text>
+</TEI>
