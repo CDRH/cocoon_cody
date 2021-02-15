@@ -458,7 +458,6 @@
     <audio controls="controls">
       <source src="{$fileroot}audio/mp3/{@url}" type="audio/mpeg"/>
       <source src="{$fileroot}audio/ogg/{substring-before(@url,'.mp3')}.ogg" type="audio/ogg"/> 
-      <embed src="http://www.google.com/reader/ui/3523697345-audio-player.swf" flashvars="audioUrl={$fileroot}audio/mp3/{@url}" type="application/x-shockwave-flash" width="230" height="27" quality="best"/>
     </audio>
 
   </xsl:template>
