@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+  <h2>Wild West in Britain</h2>
+
+    <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wild%20West%20in%20Britain%22">Go to Results</a>
+
+  <figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pst.00086.jpg" alt="Distinguished Visitors"/>
+      <figcaption>Distinguished Visitors to Buffalo Bill's Wild West, London, 1887</figcaption>
+  </figure>
+  <p>
+
+  Buffalo Bill Cody had looked forward to performing in England since the early years of his stage career. When the offer came fifteen years later to partner with the American Exhibition for an extended engagement in London, Cody and his partner, Nate Salsbury, saw their opportunity. Arriving in April, 1887, the Wild West built a massive showground in Earls Court that could accommodate over 30,000 attendees. The press referred to the feverish public reception of the Wild West as “Yankee-mania.” Opening to the public on May 9, the next five months saw a steady stream of large crowds with continuous press coverage and the attention of the country’s political and cultural elites, including Prime Minister William Gladstone, Edward, Prince of Wales, and Queen Victoria herself on the eve of her Golden Jubilee. The Wild West’s command performance before the Queen would take on mythic significance in Cody’s own account, represented as a moment of reconciliation not seen since the signing of the Declaration of Independence. When the American Exhibition closed, the Wild West continued its tour with several weeks in Birmingham and then a winter tour in Manchester where they built an indoor arena. By the time they returned to the US the following April, Cody and his partners had determined to return to Europe as soon as possible, and they launched their first continental tour the following year in Paris. On subsequent tours of Britain in 1892 and 1902-1904, the route would reach a much wider audience making its way through Scotland, Wales, Cornwall, and other regions of England. </p>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Buffalo%20Bill%27s%20Wild%20West%20in%20Britain%22">Go to Results</a>
+
+</div1>
+</body>
+</text>
+</TEI>

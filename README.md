@@ -1,4 +1,16 @@
-README.txt
+README.md
+
+Update Instructions
+-------------------
+After you update solr and pull changes from the cocoon repo, you will need to break and unbreak two files in order for changes to show up and to repupulate the search autofill. 
+
+The files are: 
+
+- stylesheets/xslt/tei.p5.xsl
+- stylesheets/xslt/solr2json-facets.xsl
+
+Other Instructions
+------------------
 
 This file will help you 'install' the quills project.
 Note that you will (most likely) be unable to install this interface to Windows.

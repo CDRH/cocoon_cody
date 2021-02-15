@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://jetson.unl.edu/cdrh/schemas/tei_all.rng"  type="xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wfc.000.scholarship">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="main">Scholarship</title>
+<author/>
+<principal>Johnston, Jeremy</principal>
+<principal>Christianson, Frank</principal>
+<principal>Seefeldt, Douglas, 1964-</principal>
+</titleStmt>
+<editionStmt>
+<edition>
+    <date>2011</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<authority>William F. Cody Archive</authority>
+<publisher>University of Nebraska-Lincoln</publisher>
+<distributor>
+    <name>Center for Digital Research in the Humanities</name>
+    <address>
+<addrLine>319 Love Library</addrLine>
+<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>cdrh@unlnotes.unl.edu</addrLine>
+</address>
+</distributor>
+<pubPlace>Lincoln, Nebraska</pubPlace>
+<address>
+<addrLine>University of Nebraska-Lincoln</addrLine>
+<addrLine>Lincoln, NE 68588-4100</addrLine>
+</address>
+
+<availability>
+    <p/>
+</availability>
+</publicationStmt>
+
+<notesStmt>
+<note><!-- notes that pertain to the entire file can be placed here; the note tag can be repeated as often as necessary within the notesStmt --></note>
+</notesStmt>
+
+<sourceDesc>
+<bibl>
+    <author/>
+    <title level="m" type="main">Scholarship</title>
+
+    <extent>1 page</extent>
+</bibl>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+    <p/>
+</correction>
+<normalization>
+    <p/>
+</normalization>
+</editorialDecl>
+</encodingDesc>
+
+<profileDesc> </profileDesc>
+
+</teiHeader>
+
+<text>
+<body>
+
+<div1 type="html">
+
+  <h2>Roosevelt's Rough Riders</h2>
+
+    <a class="btn" href="../../category/result.html?q=topic:%22Roosevelt%27s%20Rough%20Riders%22">Go to Results</a>
+<figure class="topic_image">
+      <img src="http://codyarchive.org/figures/250/wfc.img.pho.710235.jpg" alt="Congress of Rough Riders"/>
+      <figcaption>US Cavalry of Buffalo Bill&#39;s Wild West and Congress of Rough Riders (n.d.)</figcaption>
+  </figure>
+  <p>
+  
+  When the United States declared war on Spain in 1898, Theodore Roosevelt resigned as Assistant
+  Secretary of the Navy to organize the 1st Volunteer Cavalry with Colonel Leonard Wood. Roosevelt
+  reached out to a mix of volunteers, mostly westerners, including many cowboys, from New Mexico,
+  Arizona, and the Indian Territory (now Oklahoma), which provided many American Indian recruits. The
+  regiment also recruited well-to-do Easterners who graduated from Ivy League universities such as
+  Harvard and Yale. Members of the press and others recommended various nicknames, including
+  “Teddy’s Terrors” and “Cowboy Cavalry,” yet everyone eventually settled on the name “Rough Riders.”
+  Buffalo Bill Cody used the term “The Congress of Rough Riders of the World” beginning in 1893, and
+  Roosevelt initially disliked the application of the name Rough Riders to his regiment due to his concerns
+  many may view the group as “a hippodrome affair.” The popularity of the moniker won over Roosevelt
+  and he eventually embraced the name “Roosevelt’s Rough Riders.”</p>
+  <p>Despite training in Texas as a cavalry unit, the Rough Riders arrived in Cuba to fight the Spanish without
+  their horses. Lieutenant Colonel Roosevelt and Colonel Wood led the group through the Battle of Las
+  Guasimas after landing in Cuba. Roosevelt, now promoted to colonel, led the unit at the Battle of San
+  Juan Heights were he and his men secured Kettle Hill and then joined the 10th US Cavalry composed of
+  Buffalo Soldiers. The popularity of the Rough Rider regiment propelled Roosevelt through his political
+  career leading him to the presidency, yet he never did offer credit to Buffalo Bill for originating the
+  name. Despite the perceived slight, in March 1899 Buffalo Bill’s Wild West first staged a reenactment of
+  the Battle of San Juan Hill at Madison Square Garden, featuring soldiers who served under Roosevelt
+  and members of the 10th Cavalry. This reenactment and others, including the Boxer Rebellion, not only
+  reflected Buffalo Bill’s method of using authentic participants to recreate past events, but also signified
+  how the Wild West program’s focus on westward expansion continued to accommodate American
+  imperialism overseas.</p>
+  <p>Funded by the National Endowment for the Humanities and private donors.</p>
+
+  <a class="btn" href="../../category/result.html?q=topic:%22Roosevelt%27s%20Rough%20Riders%22">Go to Results</a>
+
+  </div1>
+</body>
+</text>
+</TEI>
+
