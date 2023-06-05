@@ -82,18 +82,14 @@
         <script src="{$siteroot}js/solr/year.json"> &#160; </script>
         <!--<script src="{$siteroot}js/script.js?v=1"> &#160; </script>-->
 </xsl:if>
-
+        <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-F1JBMCGJ25"></script>
         <script type="text/javascript">
             
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-26037096-1']);
-            _gaq.push(['_trackPageview']);
-            
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+            window.dataLayer = window.dataLayer || [];
+  		   function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-F1JBMCGJ25');
           
         </script>
         
